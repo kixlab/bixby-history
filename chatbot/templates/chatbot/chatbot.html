@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'chatbot/chatbot.css' %}" />
+<script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+<script src="https://d3js.org/d3-selection.v1.min.js"></script>
+<script src="https://d3js.org/d3-drag.v1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script type="text/javascript" src="{% static 'chatbot/chatbot.js' %}" /></script>
+
+
+</head>
+
+<body>
+  <div id="container">
+  <div id="chat_display">
+    <div id="chat_display_container" class="large_container">
+      <div class="chatbot_output">다음 사건이 왜 일어났는지 그 배경에 대해서 알아봅시다. 저에게 인물 혹은 사건 위주로 질문을 한다면 사건이 왜 일어났는지를 알 수 있을 거에요!</div>
+    </div>
+  </div>
+  <div id="chat_input">
+    <div id="chat_input_container" class="large_container">
+    <div id="chat_input_selector">
+
+    </div>
+    <button id="return">
+      Send
+    </button>
+  </div>
+  </div>
+</div>
+</body>
+
+</html>

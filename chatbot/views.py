@@ -1,0 +1,79 @@
+from django.shortcuts import render
+from .models import Event_Node, Question_Link, Figure, Event_Tag
+import json
+from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
+# Create your views here.
+def index(request):
+    return render(request, 'chatbot/chatbot.html', {})
+
+def retrieve_question_with_id(request):
+    ev_id = int(request.GET.get('id'))
+    output = Event_Node.objects.get(Event_Id=ev_id)
+    figures = output.Figures.all()
+    figure_list = []
+    for figure in figures:
+        figure_list.append(figure.Figure_Name)
+    event_tag_list=[]
+    entire_event_tags = Event_Tag.objects.all()
+    for event_tag in entire_event_tags:
+        if event_tag.Event_Tag_Name in output.Event_Happen:
+            event_tag_list.append(event_tag.Event_Tag_Name)
+    data = {
+        'output': output.Event_Happen,
+        'figure_list': json.dumps(figure_list),
+        'event_tag_list': json.dumps(event_tag_list),
+    }
+    return JsonResponse(data)
+
+def fig_who(request):
+    fig = request.GET.get("figure")
+    figure = Figure.objects.get(Figure_Name = fig)
+    fig_event = Event_Node.objects.filter(Figures__in =[figure]).order_by('Event_Id')[0]
+    data ={
+        'Event_Id': fig_event.Event_Id
+    }
+    return JsonResponse(data)
+def fig_next(request):
+    figlist = json.loads(request.GET.get("figures"))
+    last_ev = int(request.GET.get("cur_ev_id"))
+    print(figlist)
+    filtered_events = Event_Node.objects.filter(Event_Id__gt=last_ev)
+    for fig in figlist:
+        figure = Figure.objects.get(Figure_Name = fig)
+        filtered_events = filtered_events.filter(Figures__in=[figure])
+    filtered_events = filtered_events.order_by('Event_Id')
+    if len(filtered_events)==0:
+        data={
+            'retrieved':False,
+        }
+    else:
+        data={
+            'retrieved':True,
+            'Event_Id': filtered_events[0].Event_Id
+        }
+    print(filtered_events)
+    return JsonResponse(data)
+
+def ev_what(request):
+    ev = request.GET.get("event_tag_name")
+    event_tag = Event_Tag.objects.get(Event_Tag_Name = ev)
+    return_ev = Event_Node.objects.filter(Event_Tag__in=[event_tag]).order_by("Event_Id")[0]
+    data={
+        'Event_Id': return_ev.Event_Id
+    }
+    return JsonResponse(data)
+
+def ev_next(request):
+    cur_ev_id = int(request.GET.get("cur_ev_id"))
+    cur_ev = Event_Node.objects.get(Event_Id = cur_ev_id)
+    return_ev_set = Event_Node.objects.filter(Event_Tag__in=cur_ev.Event_Tag.all()).filter(Event_Id__gt=cur_ev_id).order_by('Event_Id')
+    if len(return_ev_set)==0:
+        data={
+            'retrieved': False,
+        }
+    else:
+        data={
+            'retrieved': True,
+            'Event_Id': return_ev_set[0].Event_Id
+        }
+    return JsonResponse(data)
