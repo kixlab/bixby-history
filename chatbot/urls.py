@@ -2,6 +2,7 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
+    url(r'^curriculum_retrieval', views.curriculum_retrieval, name='curriculum_retrieval'),
     url(r'^curriculum_save', views.curriculum_save, name='curriculum_save'),
     url(r'^curriculum/$', views.curriculum, name='curriculum'),
     url(r'^retrieve_timeline/$', views.retrieve_timeline, name='retrieve_timeline'),

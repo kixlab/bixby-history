@@ -1,6 +1,7 @@
-var init_ev_id = 22;
+var curriculum_name = "default";
+var init_ev_id; //22;
 var cur_ev_id = init_ev_id;
-var answer_ev_id = 21;
+var answer_ev_id;// = 21;
 var init_ev_output="";
 var initialized=false;
 var answer_found = false;
@@ -15,17 +16,43 @@ var cur_event_tag="";
 //question infos that user can choose
 var figure_who_question=[]
 var figure_next_question=[]
+//events that can be seen
+var events_can_be_seen=[]
+//events that cannot be seen initially
+var dependent_events=[]
 
 $(document).ready(function(){
-  initialize(init_ev_id);
+  initialize();
   elements_fit_size();
   window.onresize = function(event){
     elements_fit_size();
   }
 
 })
-initialize = function(id){
-  retrieve_output(id);
+initialize = function(){
+  console.log("het")
+  $.ajax({
+    url: '/chatbot/curriculum_retrieval',
+    data:{
+      'cur_name': curriculum_name,
+    },
+    dataType: 'json',
+    success : function(data){
+      events_can_be_seen = JSON.parse(data.events_can_be_seen)
+      dependent_events = JSON.parse(data.dependent_events)
+      init_ev_id = data.init_ev_id
+      cur_ev_id = init_ev_id
+      answer_ev_id = data.answer_ev_id
+      retrieve_output(init_ev_id);
+      
+      console.log(events_can_be_seen)
+      console.log(dependent_events)
+    },
+    error : function(data){
+
+    }
+  })
+
 }
 
 

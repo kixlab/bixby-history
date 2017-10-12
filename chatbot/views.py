@@ -32,6 +32,37 @@ def curriculum_save(request):
     }
     return JsonResponse(data)
 
+def curriculum_retrieval(request):
+    cur_name = request.GET.get('cur_name')
+    print(cur_name)
+    curriculum = Curriculum.objects.get(Curriculum_Name = cur_name)
+    init_ev_id = curriculum.Curriculum_Seed_Node.Event_Id
+    cur_eles = curriculum.curriculum_element_set.all();
+    events_can_be_seen = []
+    dependent_events = []
+    answer_ev_id = -1
+    for cur_ele in cur_eles:
+        if cur_ele.Dependencies.all().count()!=0:
+            if cur_ele.Event_Node.Event_Id == init_ev_id:
+                answer_ev_id = cur_ele.Dependencies.all()[0].Event_Id
+            else:
+                dependent ={}
+                dependent['Event_Id'] = cur_ele.Event_Node.Event_Id
+                dependent['Dependent'] = []
+                deps = cur_ele.Dependencies.all()
+                for dep in deps:
+                    dependent['Dependent'].append(dep.Event_Id)
+                dependent_events.append(dependent)
+        else:
+            events_can_be_seen.append(cur_ele.Event_Node.Event_Id)
+    data = {
+        'init_ev_id': init_ev_id,
+        'answer_ev_id': answer_ev_id,
+        'dependent_events': json.dumps(dependent_events),
+        'events_can_be_seen': json.dumps(events_can_be_seen),
+    }
+    return JsonResponse(data)
+
 def get_all_figures(request):
     figures = Figure.objects.all()
     events = Event_Tag.objects.all()
