@@ -2,21 +2,50 @@
 <html>
 <head>
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'chatbot/chatbot.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'chatbot/curriculum.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'chatbot/jquery-ui.css' %}" />
 <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
 <script src="https://d3js.org/d3-selection.v1.min.js"></script>
 <script src="https://d3js.org/d3-drag.v1.min.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<script type="text/javascript" src="{% static 'chatbot/chatbot.js' %}" /></script>
+<script type="text/javascript" src="{% static 'chatbot/curriculum.js' %}" /></script>
+<script type="text/javascript" src="{% static 'chatbot/jquery-ui.js' %}" /></script>
 
 
 </head>
 
 <body>
+  <div id="container">
+  <div id="time_line"/>
+    <div class="tl_title">
+      <div id="prompt">커리큘럼에 추가할 사건들을 검색하고 추가하세요</div>
+      <button id="next">좋아 다음으로 넘어갑시다!</button>
+    </div>
+    <div id="time_line_container">
+    </div>
+  </div>
 
+  <div id="search_panel">
+    <div id="figure_search">
+      <div class="entries" id="figure_entries"></div>
+      <div class="searcher" id="figure_searcher">
+        <input type="text" id="figure_search_input" class="search_input"></input>
+        <button id="figure_search_button" class="search_button">Add</button>
+      </div>
+    </div>
+    <div id="event_search">
+      <div class="entries" id="event_entries"></div>
+      <div class="searcher" id="event_searcher">
+        <input type="text" id="event_search_input" class="search_input"></input>
+        <button id="event_search_button" class="search_button">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
 </html>
