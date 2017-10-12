@@ -6,6 +6,9 @@ from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
 def index(request):
     return render(request, 'chatbot/chatbot.html', {})
 
+def curriculum(request):
+    return render(request, 'chatbot/curriculum.html', {})
+
 def retrieve_question_with_id(request):
     ev_id = int(request.GET.get('id'))
     output = Event_Node.objects.get(Event_Id=ev_id)
