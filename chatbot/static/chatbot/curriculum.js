@@ -51,10 +51,11 @@ $(document).ready(function(){
         console.log(start_event_id, start_index);
       });
 
-    $("#prompt").text("커리큘럼에서 원인을 찾아야 하는 사건을 선택해주세요")
+    $("#prompt").text("커리큘럼에서 학생들이 원인을 규명해야 하는 사건을 선택해주세요")
     $(this).off("click").on("click", function(){
 
       if(start_event_id!=-1){
+        $("#prompt").text("사건 간의 인과관계를 표시하여 주세요")
         $(".tl_element").off("click")
         var dependency = {}
         dependency['index']=start_index;
@@ -73,7 +74,7 @@ $(document).ready(function(){
         send_curriculum(cur_name);
       }
       })
-      $("#prompt").text("방금 선택하신 사건의 원인이 되는 사건을 선택해주세요")
+
     }else{
       alert("사건 하나는 선택하십시오")
     }

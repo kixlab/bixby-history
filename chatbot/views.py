@@ -53,8 +53,8 @@ def curriculum_retrieval(request):
                 for dep in deps:
                     dependent['Dependent'].append(dep.Event_Id)
                 dependent_events.append(dependent)
-        else:
-            events_can_be_seen.append(cur_ele.Event_Node.Event_Id)
+        events_can_be_seen.append(cur_ele.Event_Node.Event_Id)
+    #events_can_be_seen.append(init_ev_id)
     data = {
         'init_ev_id': init_ev_id,
         'answer_ev_id': answer_ev_id,
@@ -147,18 +147,26 @@ def retrieve_question_with_id(request):
     return JsonResponse(data)
 
 def fig_who(request):
+    events_can_be_seen = json.loads(request.GET.get("events_can_be_seen"))
     fig = request.GET.get("figure")
     figure = Figure.objects.get(Figure_Name = fig)
-    fig_event = Event_Node.objects.filter(Figures__in =[figure]).order_by('Event_Id')[0]
-    data ={
-        'Event_Id': fig_event.Event_Id
-    }
+    fig_event_set = Event_Node.objects.filter(Event_Id__in=events_can_be_seen).filter(Figures__in =[figure]).order_by('Event_Id')
+    if len(fig_event_set)==0:
+        data={
+            'retrieved': False,
+        }
+    else:
+        data ={
+            'retrieved': True,
+            'Event_Id': fig_event_set[0].Event_Id
+        }
     return JsonResponse(data)
 def fig_next(request):
+    events_can_be_seen = json.loads(request.GET.get("events_can_be_seen"))
     figlist = json.loads(request.GET.get("figures"))
     last_ev = int(request.GET.get("cur_ev_id"))
     print(figlist)
-    filtered_events = Event_Node.objects.filter(Event_Id__gt=last_ev)
+    filtered_events = Event_Node.objects.filter(Event_Id__in=events_can_be_seen).filter(Event_Id__gt=last_ev)
     for fig in figlist:
         figure = Figure.objects.get(Figure_Name = fig)
         filtered_events = filtered_events.filter(Figures__in=[figure])
@@ -177,17 +185,25 @@ def fig_next(request):
 
 def ev_what(request):
     ev = request.GET.get("event_tag_name")
+    events_can_be_seen = json.loads(request.GET.get("events_can_be_seen"))
     event_tag = Event_Tag.objects.get(Event_Tag_Name = ev)
-    return_ev = Event_Node.objects.filter(Event_Tag__in=[event_tag]).order_by("Event_Id")[0]
-    data={
-        'Event_Id': return_ev.Event_Id
-    }
+    return_ev_set = Event_Node.objects.filter(Event_Id__in=events_can_be_seen).filter(Event_Tag__in=[event_tag]).order_by("Event_Id")
+    if len(return_ev_set)==0:
+        data={
+            'retrieved': False,
+        }
+    else:
+        data={
+            'retrieved': True,
+            'Event_Id': return_ev_set[0].Event_Id
+        }
     return JsonResponse(data)
 
 def ev_next(request):
     cur_ev_id = int(request.GET.get("cur_ev_id"))
+    events_can_be_seen = json.loads(request.GET.get("events_can_be_seen"))
     cur_ev = Event_Node.objects.get(Event_Id = cur_ev_id)
-    return_ev_set = Event_Node.objects.filter(Event_Tag__in=cur_ev.Event_Tag.all()).filter(Event_Id__gt=cur_ev_id).order_by('Event_Id')
+    return_ev_set = Event_Node.objects.filter(Event_Id__in=events_can_be_seen).filter(Event_Tag__in=cur_ev.Event_Tag.all()).filter(Event_Id__gt=cur_ev_id).order_by('Event_Id')
     if len(return_ev_set)==0:
         data={
             'retrieved': False,
