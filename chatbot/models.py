@@ -45,3 +45,14 @@ class Curriculum_Element(models.Model):
     Curriculum = models.ForeignKey(Curriculum, null=True, on_delete= models.SET_NULL)
     def __str__(self):
         return self.Curriculum.Curriculum_Name+"_"+str(self.Event_Node.Event_Id)
+
+class Prompt_Condition(models.Model):
+    Curriculum = models.ForeignKey(Curriculum, null=True, on_delete = models.SET_NULL)
+    Include_Conditions = models.ManyToManyField(Event_Node, blank=True, related_name = 'include_conditions')
+    Exclude_Conditions = models.ManyToManyField(Event_Node, blank=True, related_name = 'exclude_conditions')
+    Final_Reach_Node = models.ForeignKey(Event_Node, null = True, blank = True, on_delete = models.SET_NULL, related_name="final_reach_node")
+    Question_Type = models.TextField(default="")
+    Question = models.TextField(default="", blank = True)
+    Answer = models.TextField(default="")
+    def __str__(self):
+        return self.Question_Type+"_"+self.Answer;

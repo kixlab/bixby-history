@@ -56,6 +56,7 @@ $(document).ready(function(){
 
       if(start_event_id!=-1){
         $("#prompt").text("사건 간의 인과관계를 표시하여 주세요")
+        
         $(".tl_element").off("click")
         var dependency = {}
         dependency['index']=start_index;

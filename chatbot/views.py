@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.db.models import Q
-from .models import Event_Node, Question_Link, Figure, Event_Tag, Curriculum, Curriculum_Element
+from .models import Event_Node, Question_Link, Figure, Event_Tag, Curriculum, Curriculum_Element, Prompt_Condition
 import json
 from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
 # Create your views here.
@@ -40,6 +40,7 @@ def curriculum_retrieval(request):
     cur_eles = curriculum.curriculum_element_set.all();
     events_can_be_seen = []
     dependent_events = []
+    prompt_conditions = []
     answer_ev_id = -1
     for cur_ele in cur_eles:
         if cur_ele.Dependencies.all().count()!=0:
@@ -54,12 +55,34 @@ def curriculum_retrieval(request):
                     dependent['Dependent'].append(dep.Event_Id)
                 dependent_events.append(dependent)
         events_can_be_seen.append(cur_ele.Event_Node.Event_Id)
+
+    prompt_condition_queries = Prompt_Condition.objects.filter(Curriculum = curriculum)
+    for prompt_condition_query in prompt_condition_queries:
+        prompt_condition = {}
+        prompt_condition['include']=[]
+        prompt_condition['exclude']=[]
+        ins = prompt_condition_query.Include_Conditions.all()
+        exs = prompt_condition_query.Exclude_Conditions.all()
+        for include_condition in ins:
+            prompt_condition['include'].append(include_condition.Event_Id)
+        for exclude_condition in exs:
+            prompt_condition['exclude'].append(exclude_condition.Event_Id)
+        prompt_condition['question']=prompt_condition_query.Question
+        prompt_condition['question_type'] = prompt_condition_query.Question_Type
+        if prompt_condition_query.Final_Reach_Node is not None:
+            prompt_condition['trigger'] = prompt_condition_query.Final_Reach_Node.Event_Id
+        else :
+            prompt_condition['trigger'] = None
+        prompt_condition['answer'] = prompt_condition_query.Answer
+        prompt_conditions.append(prompt_condition)
     #events_can_be_seen.append(init_ev_id)
+    print(prompt_conditions)
     data = {
         'init_ev_id': init_ev_id,
         'answer_ev_id': answer_ev_id,
         'dependent_events': json.dumps(dependent_events),
         'events_can_be_seen': json.dumps(events_can_be_seen),
+        'prompt_conditions': json.dumps(prompt_conditions),
     }
     return JsonResponse(data)
 

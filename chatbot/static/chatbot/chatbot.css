@@ -42,7 +42,7 @@ body{
   padding: 10px;
 }
 
-#chat_input_selector{
+#chat_input_selector_margin{
   width: 69%;
   padding-left: 1%;
   height: 90%;
@@ -76,6 +76,9 @@ body{
   margin-left: 5px;
   margin-top: 5px;
   padding: 5px;
+}
+#prompt_input{
+  font-size: 15px;
 }
 .chatbot_output{
   font-family: 'Nanum Gothic',  sans-serif;
