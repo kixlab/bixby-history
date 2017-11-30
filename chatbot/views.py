@@ -4,6 +4,9 @@ from django.db.models import Q, Count
 from .models import Event_Node, Question_Link, Figure, Event_Tag, Curriculum, Curriculum_Element, Prompt_Condition
 import json
 from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 # Create your views here.
 def index(request):
     return render(request, 'chatbot/chatbot.html', {})
