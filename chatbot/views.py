@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 from django.shortcuts import render
 from django.db.models import Q, Count
 from .models import Event_Node, Question_Link, Figure, Event_Tag, Curriculum, Curriculum_Element, Prompt_Condition
