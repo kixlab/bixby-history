@@ -5,7 +5,8 @@ from .models import Event_Node, Question_Link, Figure, Event_Tag, Curriculum, Cu
 import json
 from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
 import sys
-reload(sys)
+import imp
+imp.reload(sys)
 sys.setdefaultencoding("utf-8")
 # Create your views here.
 def index(request):
