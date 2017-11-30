@@ -43,7 +43,7 @@ def curriculum_retrieval(request):
     fs = []
     for figure in figures:
         if figure.Figure_Name != cur.Subject_Figure.Figure_Name:
-            tot_fs.append(figure.Figure_Name)
+            tot_fs.append({'name':figure.Figure_Name})
         if (figure.Figure_Name in cur.Curriculum_Background) and (figure.Figure_Name != cur.Subject_Figure.Figure_Name):
             fs.append(figure.Figure_Name)
 
@@ -89,8 +89,18 @@ def retrieve_possible_questions(request):
                 ev['prompt2'] = prompt_condi.Answer
         ps_evs.append(ev)
 
+    if len(seen_events_obj) == 0:
+        total_possible_events = Event_Node.objects.annotate(pre_num = Count('Prerequisite_Event')).filter(pre_num = 0)
+    else:
+        total_possible_events = Event_Node.objects.annotate(pre_num = Count('Prerequisite_Event')).filter((Q(Prerequisite_Event__in = seen_events_obj)&~Q(Prerequisite_Event__in = not_seen_events_obj))|Q(pre_num=0)).distinct()
+    all_figures = Figure.objects.all()
+    figure_count = {}
+    for figure in all_figures:
+        events_count = total_possible_events.filter(Figures = figure).count()
+        figure_count[figure.Figure_Name] = events_count
     data={
         'possible_events': json.dumps(ps_evs),
+        'total_figure_event_counts' : json.dumps(figure_count),
     }
     return JsonResponse(data)
 
