@@ -1,0 +1,1347 @@
+[22/Nov/2017 01:08:16] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 01:08:16] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 01:08:16] "GET /static/chatbot/chatbot.css HTTP/1.1" 304 0
+[22/Nov/2017 01:08:16] "GET /static/chatbot/chatbot.js HTTP/1.1" 304 0
+[22/Nov/2017 01:08:16] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 01:09:14] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 01:09:14] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 01:09:15] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 02:20:38] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 02:20:39] "GET /static/chatbot/chatbot.js HTTP/1.1" 304 0
+[22/Nov/2017 02:20:39] "GET /static/chatbot/chatbot.css HTTP/1.1" 304 0
+[22/Nov/2017 02:20:39] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 02:20:39] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+Not Found: /current_config/passwd
+[22/Nov/2017 03:31:01] "GET /current_config/passwd HTTP/1.1" 404 2112
+[22/Nov/2017 03:51:10] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 03:51:10] "GET /static/chatbot/chatbot.css HTTP/1.1" 304 0
+[22/Nov/2017 03:51:10] "GET /static/chatbot/chatbot.js HTTP/1.1" 304 0
+[22/Nov/2017 03:51:10] "GET /static/chatbot/chatbot.js HTTP/1.1" 304 0
+[22/Nov/2017 03:51:10] "GET /static/chatbot/chatbot.css HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 22, 2017 - 01:08:05
+Django version 1.11.5, using settings 'bixbyhistory.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}]
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}]
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}]
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}][22/Nov/2017 03:51:10] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 03:51:10] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:06:26] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 04:06:26] "GET /static/chatbot/chatbot.css HTTP/1.1" 200 1880
+[22/Nov/2017 04:06:26] "GET /static/chatbot/chatbot.js HTTP/1.1" 200 24054
+Not Found: /favicon.ico
+[22/Nov/2017 04:06:28] "GET /favicon.ico HTTP/1.1" 404 2082
+[22/Nov/2017 04:06:28] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 04:06:28] "GET /chatbot/retrieve_question_with_id?id=26 HTTP/1.1" 301 0
+[22/Nov/2017 04:06:28] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:06:32] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 04:06:32] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:06:32] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 04:06:34] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 04:06:34] "GET /static/chatbot/chatbot.css HTTP/1.1" 200 1880
+[22/Nov/2017 04:06:34] "GET /static/chatbot/chatbot.js HTTP/1.1" 200 24054
+[22/Nov/2017 04:06:34] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 04:06:34] "GET /static/chatbot/chatbot.css HTTP/1.1" 200 1880
+[22/Nov/2017 04:06:35] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+Not Found: /favicon.ico
+[22/Nov/2017 04:06:35] "GET /favicon.ico HTTP/1.1" 404 2082
+Not Found: /favicon.ico
+[22/Nov/2017 04:06:35] "GET /chatbot/retrieve_question_with_id?id=26 HTTP/1.1" 301 0
+[22/Nov/2017 04:06:35] "GET /favicon.ico HTTP/1.1" 404 2082
+[22/Nov/2017 04:06:35] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:06:36] "GET /static/chatbot/chatbot.js HTTP/1.1" 200 24054
+[22/Nov/2017 04:06:36] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 04:06:36] "GET /static/chatbot/chatbot.css HTTP/1.1" 200 1880
+[22/Nov/2017 04:06:36] "GET /static/chatbot/chatbot.js HTTP/1.1" 200 24054
+
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}]
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}]
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}]
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}][22/Nov/2017 04:06:37] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 04:06:37] "GET /chatbot/retrieve_question_with_id?id=26 HTTP/1.1" 301 0
+[22/Nov/2017 04:06:37] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:06:37] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 04:06:37] "GET /chatbot/retrieve_question_with_id?id=26 HTTP/1.1" 301 0
+Not Found: /favicon.ico
+[22/Nov/2017 04:06:37] "GET /favicon.ico HTTP/1.1" 404 2082
+[22/Nov/2017 04:06:37] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:06:44] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 04:06:44] "GET /static/chatbot/chatbot.css HTTP/1.1" 200 1880
+[22/Nov/2017 04:06:44] "GET /static/chatbot/chatbot.js HTTP/1.1" 200 24054
+[22/Nov/2017 04:06:44] "GET /chatbot/ HTTP/1.1" 200 1351
+Not Found: /robots.txt
+[22/Nov/2017 04:06:45] "GET /robots.txt HTTP/1.1" 404 2079
+[22/Nov/2017 04:06:45] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 04:06:45] "GET /static/chatbot/chatbot.css HTTP/1.1" 200 1880
+[22/Nov/2017 04:06:45] "GET /static/chatbot/chatbot.js HTTP/1.1" 200 24054
+[22/Nov/2017 04:06:45] "GET /chatbot/retrieve_question_with_id?id=26 HTTP/1.1" 301 0
+[22/Nov/2017 04:06:45] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+Not Found: /favicon.ico
+[22/Nov/2017 04:06:45] "GET /favicon.ico HTTP/1.1" 404 2082
+[22/Nov/2017 04:06:47] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 04:06:47] "GET /chatbot/retrieve_question_with_id?id=26 HTTP/1.1" 301 0
+[22/Nov/2017 04:06:47] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:06:54] "GET /chatbot/fig_who?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:06:54] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:06:54] "GET /chatbot/retrieve_question_with_id?id=2 HTTP/1.1" 301 0
+[22/Nov/2017 04:06:54] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:06:54] "GET /chatbot/fig_who?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:06:54] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:06:54] "GET /chatbot/retrieve_question_with_id?id=2 HTTP/1.1" 301 0
+[22/Nov/2017 04:06:54] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:06:56] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 04:06:56] "GET /static/chatbot/chatbot.css HTTP/1.1" 200 1880
+[22/Nov/2017 04:06:56] "GET /static/chatbot/chatbot.js HTTP/1.1" 200 24054
+
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}]
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}]
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}]
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}][22/Nov/2017 04:06:57] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 04:06:57] "GET /chatbot/retrieve_question_with_id?id=26 HTTP/1.1" 301 0
+[22/Nov/2017 04:06:57] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+Not Found: /favicon.ico
+[22/Nov/2017 04:06:57] "GET /favicon.ico HTTP/1.1" 404 2082
+[22/Nov/2017 04:06:58] "GET /chatbot/fig_who?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:06:58] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:06:58] "GET /chatbot/retrieve_question_with_id?id=2 HTTP/1.1" 301 0
+[22/Nov/2017 04:06:58] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:07:00] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:00] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:07:06] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:06] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:07:08] "GET /chatbot/ev_next?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:07:08] "GET /chatbot/ev_next/?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:07:08] "GET /chatbot/retrieve_question_with_id?id=27 HTTP/1.1" 301 0
+[22/Nov/2017 04:07:08] "GET /chatbot/retrieve_question_with_id/?id=27 HTTP/1.1" 200 338
+[22/Nov/2017 04:07:14] "GET /chatbot/fig_who?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:07:14] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:14] "GET /chatbot/retrieve_question_with_id?id=2 HTTP/1.1" 301 0
+[22/Nov/2017 04:07:15] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:07:19] "GET /chatbot/fig_who?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:07:19] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:19] "GET /chatbot/retrieve_question_with_id?id=8 HTTP/1.1" 301 0
+[22/Nov/2017 04:07:19] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:07:22] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:22] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:07:28] "GET /chatbot/fig_who?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:07:28] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:28] "GET /chatbot/retrieve_question_with_id?id=8 HTTP/1.1" 301 0
+[22/Nov/2017 04:07:28] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:07:29] "GET /chatbot/fig_who?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:07:29] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:29] "GET /chatbot/retrieve_question_with_id?id=0 HTTP/1.1" 301 0
+[22/Nov/2017 04:07:29] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:07:34] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:35] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:07:40] "GET /chatbot/fig_who?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:07:40] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:40] "GET /chatbot/retrieve_question_with_id?id=0 HTTP/1.1" 301 0
+[22/Nov/2017 04:07:40] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:07:40] "GET /chatbot/fig_who?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:07:40] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:40] "GET /chatbot/retrieve_question_with_id?id=8 HTTP/1.1" 301 0
+[22/Nov/2017 04:07:40] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:07:41] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 04:07:41] "GET /static/chatbot/chatbot.css HTTP/1.1" 200 1880
+[22/Nov/2017 04:07:41] "GET /static/chatbot/chatbot.js HTTP/1.1" 200 24054
+[22/Nov/2017 04:07:42] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 04:07:42] "GET /chatbot/retrieve_question_with_id?id=26 HTTP/1.1" 301 0
+[22/Nov/2017 04:07:42] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+Not Found: /favicon.ico
+[22/Nov/2017 04:07:43] "GET /favicon.ico HTTP/1.1" 404 2082
+[22/Nov/2017 04:07:44] "GET /chatbot/fig_who?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:07:45] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:46] "GET /chatbot/retrieve_question_with_id?id=2 HTTP/1.1" 301 0
+[22/Nov/2017 04:07:46] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:07:47] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:07:47] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:47] "GET /chatbot/retrieve_question_with_id?id=1 HTTP/1.1" 301 0
+[22/Nov/2017 04:07:47] "GET /chatbot/retrieve_question_with_id/?id=1 HTTP/1.1" 200 369
+[22/Nov/2017 04:07:50] "GET /chatbot/fig_who?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:07:50] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:50] "GET /chatbot/retrieve_question_with_id?id=0 HTTP/1.1" 301 0
+[22/Nov/2017 04:07:50] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:07:57] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:07:57] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:07:58] "GET /chatbot/retrieve_question_with_id?id=1 HTTP/1.1" 301 0
+[22/Nov/2017 04:07:58] "GET /chatbot/retrieve_question_with_id/?id=1 HTTP/1.1" 200 369
+[22/Nov/2017 04:08:00] "GET /chatbot/ev_next?cur_ev_id=1&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:00] "GET /chatbot/ev_next/?cur_ev_id=1&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:08:04] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=1&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:04] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=1&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:04] "GET /chatbot/retrieve_question_with_id?id=6 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:04] "GET /chatbot/retrieve_question_with_id/?id=6 HTTP/1.1" 200 234
+[22/Nov/2017 04:08:06] "GET /chatbot/fig_who?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:06] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:06] "GET /chatbot/retrieve_question_with_id?id=2 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:06] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:08:07] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=1&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}]
+['이성계']
+<QuerySet [<Event_Node: 1370년 이성계는 애기살로 70명을 죽이고 장수를 설득하기 위해 머리 허벅지를 맞추는 등 미친 듯한 활쏨씨를 보였다>, <Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1382년 이방원이 과거에 응시하여 과거에 급제하였고 아버지인 이성계가 매우 기뻐하였다.>, <Event_Node: 1388년 우왕의 명으로 2차 요동정벌을 위해 이성계가 북상하였다>, <Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1370년 이성계는 애기살로 70명을 죽이고 장수를 설득하기 위해 머리 허벅지를 맞추는 등 미친 듯한 활쏨씨를 보였다>, <Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1382년 이방원이 과거에 응시하여 과거에 급제하였고 아버지인 이성계가 매우 기뻐하였다.>, <Event_Node: 1388년 우왕의 명으로 2차 요동정벌을 위해 이성계가 북상하였다>, <Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1382년 이방원이 과거에 응시하여 과거에 급제하였고 아버지인 이성계가 매우 기뻐하였다.>, <Event_Node: 1388년 우왕의 명으로 2차 요동정벌을 위해 이성계가 북상하였다>, <Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1382년 이방원이 과거에 응시하여 과거에 급제하였고 아버지인 이성계가 매우 기뻐하였다.>, <Event_Node: 1388년 우왕의 명으로 2차 요동정벌을 위해 이성계가 북상하였다>, <Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>[22/Nov/2017 04:08:08] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=1&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:08] "GET /chatbot/retrieve_question_with_id?id=6 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:08] "GET /chatbot/retrieve_question_with_id/?id=6 HTTP/1.1" 200 234
+[22/Nov/2017 04:08:09] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%5D&cur_ev_id=2&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:09] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%5D&cur_ev_id=2&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:09] "GET /chatbot/retrieve_question_with_id?id=3 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:09] "GET /chatbot/retrieve_question_with_id/?id=3 HTTP/1.1" 200 336
+[22/Nov/2017 04:08:12] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%5D&cur_ev_id=2&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:12] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%5D&cur_ev_id=2&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:12] "GET /chatbot/retrieve_question_with_id?id=3 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:12] "GET /chatbot/retrieve_question_with_id/?id=3 HTTP/1.1" 200 336
+[22/Nov/2017 04:08:15] "GET /chatbot/ev_next?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:15] "GET /chatbot/ev_next/?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:08:16] "GET /chatbot/retrieve_question_with_id?id=27 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:16] "GET /chatbot/retrieve_question_with_id/?id=27 HTTP/1.1" 200 338
+[22/Nov/2017 04:08:17] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%5D&cur_ev_id=3&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:17] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%5D&cur_ev_id=3&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:17] "GET /chatbot/retrieve_question_with_id?id=4 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:17] "GET /chatbot/retrieve_question_with_id/?id=4 HTTP/1.1" 200 329
+[22/Nov/2017 04:08:21] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%5D&cur_ev_id=4&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:21] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%5D&cur_ev_id=4&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:21] "GET /chatbot/retrieve_question_with_id?id=5 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:21] "GET /chatbot/retrieve_question_with_id/?id=5 HTTP/1.1" 200 251
+[22/Nov/2017 04:08:23] "GET /chatbot/fig_who?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:23] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:23] "GET /chatbot/retrieve_question_with_id?id=2 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:23] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:08:26] "GET /chatbot/ HTTP/1.1" 200 1351
+
+['정몽주']
+<QuerySet [<Event_Node: 1372년 명나라 사절 파견을 마치고 귀국하는 길에 정몽주가 탄 배가 난파당하여 십 수일을 표류하였다.>, <Event_Node: 1372년 명나라 태조가 특별히 사람을 보내어 바다 위를 수색하게 했고 정몽주는 목숨을 겨우 건졌다>, <Event_Node: 1372년 정몽주가 조난사고를 겪고도 사신으로서의 책무를 다하였다.>, <Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1384년 명나라와 조선의 관계가 악화되어 아무도 명나라 사신으로 가려하지 않았지만, 정몽주가 성절사로 지원하여 명과의 관계회복에 공을 세웠다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 정몽주는 1389년 위화도 회군 이후 고려 왕실을 보전하는 온건 개혁을 주장하였다.>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원과 정몽주가 술자리를 함께하였고 이방원이 하여가를 읊자 정몽주가 단심가로 화답하였다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 이방원은 자객을 시켜 선지교에서 정몽주를 죽인다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['정몽주']
+<QuerySet [<Event_Node: 1372년 명나라 사절 파견을 마치고 귀국하는 길에 정몽주가 탄 배가 난파당하여 십 수일을 표류하였다.>, <Event_Node: 1372년 명나라 태조가 특별히 사람을 보내어 바다 위를 수색하게 했고 정몽주는 목숨을 겨우 건졌다>, <Event_Node: 1372년 정몽주가 조난사고를 겪고도 사신으로서의 책무를 다하였다.>, <Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1384년 명나라와 조선의 관계가 악화되어 아무도 명나라 사신으로 가려하지 않았지만, 정몽주가 성절사로 지원하여 명과의 관계회복에 공을 세웠다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 정몽주는 1389년 위화도 회군 이후 고려 왕실을 보전하는 온건 개혁을 주장하였다.>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원과 정몽주가 술자리를 함께하였고 이방원이 하여가를 읊자 정몽주가 단심가로 화답하였다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 이방원은 자객을 시켜 선지교에서 정몽주를 죽인다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['정몽주']
+<QuerySet [<Event_Node: 1372년 명나라 태조가 특별히 사람을 보내어 바다 위를 수색하게 했고 정몽주는 목숨을 겨우 건졌다>, <Event_Node: 1372년 정몽주가 조난사고를 겪고도 사신으로서의 책무를 다하였다.>, <Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1384년 명나라와 조선의 관계가 악화되어 아무도 명나라 사신으로 가려하지 않았지만, 정몽주가 성절사로 지원하여 명과의 관계회복에 공을 세웠다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 정몽주는 1389년 위화도 회군 이후 고려 왕실을 보전하는 온건 개혁을 주장하였다.>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원과 정몽주가 술자리를 함께하였고 이방원이 하여가를 읊자 정몽주가 단심가로 화답하였다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 이방원은 자객을 시켜 선지교에서 정몽주를 죽인다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['정몽주']
+<QuerySet [<Event_Node: 1372년 정몽주가 조난사고를 겪고도 사신으로서의 책무를 다하였다.>, <Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1384년 명나라와 조선의 관계가 악화되어 아무도 명나라 사신으로 가려하지 않았지만, 정몽주가 성절사로 지원하여 명과의 관계회복에 공을 세웠다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 정몽주는 1389년 위화도 회군 이후 고려 왕실을 보전하는 온건 개혁을 주장하였다.>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원과 정몽주가 술자리를 함께하였고 이방원이 하여가를 읊자 정몽주가 단심가로 화답하였다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 이방원은 자객을 시켜 선지교에서 정몽주를 죽인다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}][22/Nov/2017 04:08:26] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 04:08:26] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:08:29] "GET /chatbot/ HTTP/1.1" 200 1351
+[22/Nov/2017 04:08:29] "GET /static/chatbot/chatbot.css HTTP/1.1" 200 1880
+[22/Nov/2017 04:08:29] "GET /static/chatbot/chatbot.js HTTP/1.1" 200 24054
+[22/Nov/2017 04:08:30] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 4606
+[22/Nov/2017 04:08:30] "GET /chatbot/retrieve_question_with_id?id=26 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:30] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:08:31] "GET /chatbot/ev_next?cur_ev_id=3&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:31] "GET /chatbot/ev_next/?cur_ev_id=3&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:31] "GET /chatbot/retrieve_question_with_id?id=4 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:31] "GET /chatbot/retrieve_question_with_id/?id=4 HTTP/1.1" 200 329
+[22/Nov/2017 04:08:33] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%5D&cur_ev_id=2&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:33] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%5D&cur_ev_id=2&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:33] "GET /chatbot/retrieve_question_with_id?id=3 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:33] "GET /chatbot/retrieve_question_with_id/?id=3 HTTP/1.1" 200 336
+[22/Nov/2017 04:08:35] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:35] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:08:39] "GET /chatbot/ev_next?cur_ev_id=4&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:39] "GET /chatbot/ev_next/?cur_ev_id=4&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:39] "GET /chatbot/retrieve_question_with_id?id=5 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:39] "GET /chatbot/retrieve_question_with_id/?id=5 HTTP/1.1" 200 251
+[22/Nov/2017 04:08:40] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:40] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:08:41] "GET /chatbot/ev_next?cur_ev_id=3&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:41] "GET /chatbot/ev_next/?cur_ev_id=3&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:08:41] "GET /chatbot/retrieve_question_with_id?id=4 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:41] "GET /chatbot/retrieve_question_with_id/?id=4 HTTP/1.1" 200 329
+[22/Nov/2017 04:08:44] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:44] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:08:44] "GET /chatbot/retrieve_question_with_id?id=10 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:44] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:08:48] "GET /chatbot/ev_next?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:08:48] "GET /chatbot/ev_next/?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:08:48] "GET /chatbot/retrieve_question_with_id?id=11 HTTP/1.1" 301 0
+[22/Nov/2017 04:08:48] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:09:00] "GET /chatbot/ev_next?cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:00] "GET /chatbot/ev_next/?cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:00] "GET /chatbot/retrieve_question_with_id?id=12 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:00] "GET /chatbot/retrieve_question_with_id/?id=12 HTTP/1.1" 200 361
+[22/Nov/2017 04:09:09] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:09:10] "GET /chatbot/ev_what?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:10] "GET /chatbot/ev_what/?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:10] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:09:17] "GET /chatbot/ev_next/?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:17] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:09:18] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=6&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:18] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=6&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:09:18] "GET /chatbot/retrieve_question_with_id?id=7 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:18] "GET /chatbot/retrieve_question_with_id/?id=7 HTTP/1.1" 200 387
+[22/Nov/2017 04:09:19] "GET /chatbot/ev_next?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:19] "GET /chatbot/ev_next/?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:19] "GET /chatbot/retrieve_question_with_id?id=27 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:19] "GET /chatbot/retrieve_question_with_id/?id=27 HTTP/1.1" 200 338
+[22/Nov/2017 04:09:22] "GET /chatbot/ev_next/?cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:22] "GET /chatbot/retrieve_question_with_id/?id=12 HTTP/1.1" 200 361
+[22/Nov/2017 04:09:22] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:09:23] "GET /chatbot/fig_who?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:23] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:09:23] "GET /chatbot/retrieve_question_with_id?id=8 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:23] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:09:27] "GET /chatbot/fig_who?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:27] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:09:27] "GET /chatbot/retrieve_question_with_id?id=8 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:27] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:09:28] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=7&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+
+test1
+[{'include': [6, 8], 'answer': '그렇게 생각하시는군요. 저는 이성계와 이방원은 계속 같은 편에 있을 것이고 그 둘과 정몽주의 사이가 틀어지는 사건이 발생했을거라 생각해요.', 'question': '이성계와 이방원은 가족 관계이고, 이성계와 정몽주는 같이 일했던 사이인 것 같은데 이성계와 이방원, 정몽주의 관계가 시간에 따라 변한 걸까요?', 'question_type': 'change', 'trigger': None, 'exclude': [18, 20, 25, 7]}, {'include': [18], 'answer': '저는 정몽주가 잔꾀를 부릴 수 있는 좋은 타이밍이었다고 생각해요!', 'question': '이 사건 다음에 정몽주는 무엇을 했을까요..?', 'question_type': 'contingency', 'trigger': 19, 'exclude': [20, 22, 25]}, {'include': [], 'answer': '다른 기록을 찾으니 정몽주가 이성계가 나라를 뒤엎겠다는 속셈을 보였을 때 속상해 한 적도 있다고 하고, 그런데 또 이성계를 위화도 회군에서 도와주고... 저는 아직 많이 헷갈려요.', 'question': '흠 궁금해서 그런데 정몽주는 왜 이성계를 도왔을까요?', 'question_type': 'causality', 'trigger': 16, 'exclude': []}, {'include': [], 'answer': '저는 정몽주라는 사람이 나중에 변하지 않았을까 예상해 봅니다.', 'question': '정말로 정몽주는 책임감이 강한 사람인 것 같네요. 이런 정몽주에게 무슨 일이 일어났기에 그런 최후를 맞이하게 되었을까요?', 'question_type': 'contingency', 'trigger': 5, 'exclude': [19, 20, 21, 22, 24, 25]}, {'include': [], 'answer': '이성계와 정몽주는 우호적인 관계이기 때문에 그런 것 아닐까요?', 'question': '이성계는 왜 이방원을 크게 혼낸 것 일까요?', 'question_type': 'causality', 'trigger': 27, 'exclude': [21, 22, 24, 25]}, {'include': [14, 7], 'answer': '비슷한 방향이기는 하지만 이성계는 점점 큰 꿈을 꾸는 것 같긴 한 거 같아요.', 'question': '이성계의 목표가 계속해서 바뀐 것 같다고 생각하시나요?', 'question_type': 'change', 'trigger': 25, 'exclude': []}]
+['정몽주']
+<QuerySet [<Event_Node: 1372년 명나라 사절 파견을 마치고 귀국하는 길에 정몽주가 탄 배가 난파당하여 십 수일을 표류하였다.>, <Event_Node: 1372년 명나라 태조가 특별히 사람을 보내어 바다 위를 수색하게 했고 정몽주는 목숨을 겨우 건졌다>, <Event_Node: 1372년 정몽주가 조난사고를 겪고도 사신으로서의 책무를 다하였다.>, <Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1384년 명나라와 조선의 관계가 악화되어 아무도 명나라 사신으로 가려하지 않았지만, 정몽주가 성절사로 지원하여 명과의 관계회복에 공을 세웠다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 정몽주는 1389년 위화도 회군 이후 고려 왕실을 보전하는 온건 개혁을 주장하였다.>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원과 정몽주가 술자리를 함께하였고 이방원이 하여가를 읊자 정몽주가 단심가로 화답하였다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 이방원은 자객을 시켜 선지교에서 정몽주를 죽인다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1388년 우왕의 명으로 2차 요동정벌을 위해 이성계가 북상하였다>, <Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1382년 이방원이 과거에 응시하여 과거에 급제하였고 아버지인 이성계가 매우 기뻐하였다.>, <Event_Node: 1388년 우왕의 명으로 2차 요동정벌을 위해 이성계가 북상하였다>, <Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1382년 이방원이 과거에 응시하여 과거에 급제하였고 아버지인 이성계가 매우 기뻐하였다.>, <Event_Node: 1388년 우왕의 명으로 2차 요동정벌을 위해 이성계가 북상하였다>, <Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>[22/Nov/2017 04:09:28] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=7&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:09:28] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:09:36] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:36] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:36] "GET /chatbot/retrieve_question_with_id?id=12 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:36] "GET /chatbot/retrieve_question_with_id/?id=12 HTTP/1.1" 200 361
+[22/Nov/2017 04:09:36] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:36] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:36] "GET /chatbot/retrieve_question_with_id?id=12 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:36] "GET /chatbot/retrieve_question_with_id/?id=12 HTTP/1.1" 200 361
+[22/Nov/2017 04:09:41] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:41] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:41] "GET /chatbot/retrieve_question_with_id?id=10 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:41] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:09:42] "GET /chatbot/ev_next?cur_ev_id=6&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:42] "GET /chatbot/ev_next?cur_ev_id=12&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:42] "GET /chatbot/ev_next/?cur_ev_id=12&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:42] "GET /chatbot/retrieve_question_with_id?id=13 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:42] "GET /chatbot/retrieve_question_with_id/?id=13 HTTP/1.1" 200 170
+[22/Nov/2017 04:09:42] "GET /chatbot/ev_next/?cur_ev_id=6&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:09:42] "GET /chatbot/retrieve_question_with_id?id=7 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:42] "GET /chatbot/retrieve_question_with_id/?id=7 HTTP/1.1" 200 387
+[22/Nov/2017 04:09:45] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:46] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:46] "GET /chatbot/retrieve_question_with_id?id=11 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:46] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:09:46] "GET /chatbot/ev_what?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:46] "GET /chatbot/ev_what/?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:46] "GET /chatbot/retrieve_question_with_id?id=10 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:46] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:09:50] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:50] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:50] "GET /chatbot/retrieve_question_with_id?id=13 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:50] "GET /chatbot/retrieve_question_with_id/?id=13 HTTP/1.1" 200 170
+[22/Nov/2017 04:09:51] "GET /chatbot/fig_who?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:51] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:09:51] "GET /chatbot/retrieve_question_with_id?id=2 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:51] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:09:53] "GET /chatbot/ev_next?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:53] "GET /chatbot/ev_next/?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:53] "GET /chatbot/retrieve_question_with_id?id=11 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:53] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:09:54] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=13&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:54] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=13&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:54] "GET /chatbot/retrieve_question_with_id?id=14 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:54] "GET /chatbot/retrieve_question_with_id/?id=14 HTTP/1.1" 200 282
+[22/Nov/2017 04:09:58] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=14&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:09:58] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=14&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:09:58] "GET /chatbot/retrieve_question_with_id?id=16 HTTP/1.1" 301 0
+[22/Nov/2017 04:09:58] "GET /chatbot/retrieve_question_with_id/?id=16 HTTP/1.1" 200 273
+[22/Nov/2017 04:10:00] "GET /chatbot/ev_next?cur_ev_id=7&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:10:00] "GET /chatbot/ev_next/?cur_ev_id=7&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:10:04] "GET /chatbot/ev_next?cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:10:04] "GET /chatbot/ev_next/?cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:10:04] "GET /chatbot/retrieve_question_with_id/?id=12 HTTP/1.1" 200 361
+[22/Nov/2017 04:10:10] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=7&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:10:10] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=7&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:10:10] "GET /chatbot/retrieve_question_with_id?id=16 HTTP/1.1" 301 0
+[22/Nov/2017 04:10:10] "GET /chatbot/retrieve_question_with_id/?id=16 HTTP/1.1" 200 273
+[22/Nov/2017 04:10:15] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:10:18] "GET /chatbot/fig_who?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:10:18] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:10:18] "GET /chatbot/retrieve_question_with_id?id=0 HTTP/1.1" 301 0
+[22/Nov/2017 04:10:19] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:10:23] "GET /chatbot/retrieve_question_with_id?id=5 HTTP/1.1" 301 0
+[22/Nov/2017 04:10:23] "GET /chatbot/retrieve_question_with_id/?id=5 HTTP/1.1" 200 251
+[22/Nov/2017 04:10:42] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=16&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+
+['이방원']
+<QuerySet [<Event_Node: 1388년 위화도 회군에서 이방원이 개경에 있는 어머니와 동생들을 구조하는 역할을 담당하였다.>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이방원과 정몽주가 술자리를 함께하였고 이방원이 하여가를 읊자 정몽주가 단심가로 화답하였다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 이방원은 자객을 시켜 선지교에서 정몽주를 죽인다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이방원']
+<QuerySet [<Event_Node: 1388년 위화도 회군에서 이방원이 개경에 있는 어머니와 동생들을 구조하는 역할을 담당하였다.>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이방원과 정몽주가 술자리를 함께하였고 이방원이 하여가를 읊자 정몽주가 단심가로 화답하였다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 이방원은 자객을 시켜 선지교에서 정몽주를 죽인다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1388년 우왕의 명으로 2차 요동정벌을 위해 이성계가 북상하였다>, <Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['정몽주', '이성계']
+<QuerySet [<Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>[22/Nov/2017 04:10:42] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=16&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:10:42] "GET /chatbot/retrieve_question_with_id?id=18 HTTP/1.1" 301 0
+[22/Nov/2017 04:10:42] "GET /chatbot/retrieve_question_with_id/?id=18 HTTP/1.1" 200 403
+[22/Nov/2017 04:10:52] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=18&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:10:52] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=18&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:10:52] "GET /chatbot/retrieve_question_with_id?id=19 HTTP/1.1" 301 0
+[22/Nov/2017 04:10:52] "GET /chatbot/retrieve_question_with_id/?id=19 HTTP/1.1" 200 171
+[22/Nov/2017 04:11:00] "GET /chatbot/ev_next?cur_ev_id=16&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:00] "GET /chatbot/ev_next/?cur_ev_id=16&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:00] "GET /chatbot/retrieve_question_with_id?id=17 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:00] "GET /chatbot/retrieve_question_with_id/?id=17 HTTP/1.1" 200 325
+[22/Nov/2017 04:11:04] "GET /chatbot/ev_next?cur_ev_id=17&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:04] "GET /chatbot/ev_next/?cur_ev_id=17&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:04] "GET /chatbot/retrieve_question_with_id?id=18 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:04] "GET /chatbot/retrieve_question_with_id/?id=18 HTTP/1.1" 200 403
+[22/Nov/2017 04:11:19] "GET /chatbot/ev_next?cur_ev_id=18&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:19] "GET /chatbot/ev_next/?cur_ev_id=18&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:11:25] "GET /chatbot/ev_what?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:25] "GET /chatbot/ev_what/?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:25] "GET /chatbot/retrieve_question_with_id?id=10 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:25] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:11:29] "GET /chatbot/ev_next?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:29] "GET /chatbot/ev_next/?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:29] "GET /chatbot/retrieve_question_with_id?id=11 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:29] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:11:31] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:11:34] "GET /chatbot/ev_next?cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:34] "GET /chatbot/ev_next/?cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:34] "GET /chatbot/retrieve_question_with_id?id=12 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:34] "GET /chatbot/retrieve_question_with_id/?id=12 HTTP/1.1" 200 361
+[22/Nov/2017 04:11:35] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:36] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:36] "GET /chatbot/retrieve_question_with_id?id=27 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:36] "GET /chatbot/retrieve_question_with_id/?id=27 HTTP/1.1" 200 338
+[22/Nov/2017 04:11:39] "GET /chatbot/retrieve_question_with_id?id=26 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:39] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:11:40] "GET /chatbot/ev_next?cur_ev_id=12&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:40] "GET /chatbot/ev_next/?cur_ev_id=12&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:40] "GET /chatbot/retrieve_question_with_id?id=13 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:40] "GET /chatbot/retrieve_question_with_id/?id=13 HTTP/1.1" 200 170
+[22/Nov/2017 04:11:42] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:11:43] "GET /chatbot/ev_next?cur_ev_id=13&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:43] "GET /chatbot/ev_next/?cur_ev_id=13&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:43] "GET /chatbot/retrieve_question_with_id?id=14 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:43] "GET /chatbot/retrieve_question_with_id/?id=14 HTTP/1.1" 200 282
+[22/Nov/2017 04:11:44] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:44] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:11:44] "GET /chatbot/retrieve_question_with_id?id=1 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:44] "GET /chatbot/retrieve_question_with_id/?id=1 HTTP/1.1" 200 369
+[22/Nov/2017 04:11:45] "GET /chatbot/fig_who?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:45] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:11:45] "GET /chatbot/retrieve_question_with_id?id=8 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:45] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:11:47] "GET /chatbot/ev_next?cur_ev_id=14&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:47] "GET /chatbot/ev_next/?cur_ev_id=14&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:47] "GET /chatbot/retrieve_question_with_id/?id=16 HTTP/1.1" 200 273
+[22/Nov/2017 04:11:49] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%5D&cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:49] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%5D&cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:49] "GET /chatbot/retrieve_question_with_id?id=27 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:49] "GET /chatbot/retrieve_question_with_id/?id=27 HTTP/1.1" 200 338
+[22/Nov/2017 04:11:49] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=19&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:49] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=19&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:49] "GET /chatbot/retrieve_question_with_id?id=20 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:50] "GET /chatbot/retrieve_question_with_id/?id=20 HTTP/1.1" 200 228
+[22/Nov/2017 04:11:53] "GET /chatbot/ev_what?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:53] "GET /chatbot/ev_what/?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:11:53] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:11:55] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=20&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:55] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=20&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:55] "GET /chatbot/retrieve_question_with_id?id=21 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:55] "GET /chatbot/retrieve_question_with_id/?id=21 HTTP/1.1" 200 222
+[22/Nov/2017 04:11:55] "GET /chatbot/ev_what?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:56] "GET /chatbot/ev_what/?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:11:57] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:11:59] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=21&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:11:59] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=21&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:11:59] "GET /chatbot/retrieve_question_with_id?id=24 HTTP/1.1" 301 0
+[22/Nov/2017 04:11:59] "GET /chatbot/retrieve_question_with_id/?id=24 HTTP/1.1" 200 372
+[22/Nov/2017 04:12:00] "GET /chatbot/ev_next?cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:00] "GET /chatbot/ev_next/?cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:12:00] "GET /chatbot/retrieve_question_with_id/?id=1 HTTP/1.1" 200 369
+[22/Nov/2017 04:12:01] "GET /chatbot/fig_who?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:01] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:12:01] "GET /chatbot/retrieve_question_with_id?id=0 HTTP/1.1" 301 0
+[22/Nov/2017 04:12:01] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:12:04] "GET /chatbot/ev_next/?cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:12:04] "GET /chatbot/retrieve_question_with_id/?id=12 HTTP/1.1" 200 361
+[22/Nov/2017 04:12:08] "GET /chatbot/retrieve_question_with_id?id=22 HTTP/1.1" 301 0
+[22/Nov/2017 04:12:08] "GET /chatbot/retrieve_question_with_id/?id=22 HTTP/1.1" 200 330
+[22/Nov/2017 04:12:09] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:12:09] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:12:10] "GET /chatbot/ev_next?cur_ev_id=12&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:10] "GET /chatbot/ev_next/?cur_ev_id=12&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:12:10] "GET /chatbot/retrieve_question_with_id?id=13 HTTP/1.1" 301 0
+[22/Nov/2017 04:12:10] "GET /chatbot/retrieve_question_with_id/?id=13 HTTP/1.1" 200 170
+[22/Nov/2017 04:12:11] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:11] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:12:11] "GET /chatbot/retrieve_question_with_id?id=1 HTTP/1.1" 301 0
+[22/Nov/2017 04:12:11] "GET /chatbot/retrieve_question_with_id/?id=1 HTTP/1.1" 200 369
+[22/Nov/2017 04:12:13] "GET /chatbot/ev_next?cur_ev_id=13&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:13] "GET /chatbot/ev_next/?cur_ev_id=13&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:12:13] "GET /chatbot/retrieve_question_with_id?id=14 HTTP/1.1" 301 0
+[22/Nov/2017 04:12:13] "GET /chatbot/retrieve_question_with_id/?id=14 HTTP/1.1" 200 282
+[22/Nov/2017 04:12:14] "GET /chatbot/ev_next?cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:14] "GET /chatbot/ev_next/?cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:12:15] "GET /chatbot/ev_next/?cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:12:16] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=24&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:16] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=24&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:12:16] "GET /chatbot/retrieve_question_with_id?id=25 HTTP/1.1" 301 0
+[22/Nov/2017 04:12:16] "GET /chatbot/retrieve_question_with_id/?id=25 HTTP/1.1" 200 356
+[22/Nov/2017 04:12:17] "GET /chatbot/ev_next?cur_ev_id=14&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:17] "GET /chatbot/ev_next/?cur_ev_id=14&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:12:17] "GET /chatbot/retrieve_question_with_id?id=16 HTTP/1.1" 301 0
+[22/Nov/2017 04:12:17] "GET /chatbot/retrieve_question_with_id/?id=16 HTTP/1.1" 200 273
+[22/Nov/2017 04:12:18] "GET /chatbot/ev_next?cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:18] "GET /chatbot/ev_next/?cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:12:20] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:20] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:12:20] "GET /chatbot/retrieve_question_with_id/?id=12 HTTP/1.1" 200 361
+[22/Nov/2017 04:12:25] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:25] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:12:26] "GET /chatbot/ev_what?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:26] "GET /chatbot/ev_what/?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:12:26] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:12:28] "GET /chatbot/ev_next/?cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:12:35] "GET /chatbot/ev_next?cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:35] "GET /chatbot/ev_next/?cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:12:41] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:12:43] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:12:44] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:44] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:12:46] "GET /chatbot/ev_next/?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:12:46] "GET /chatbot/retrieve_question_with_id/?id=27 HTTP/1.1" 200 338
+[22/Nov/2017 04:12:47] "GET /chatbot/ev_next/?cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:12:50] "GET /chatbot/ev_what/?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:12:50] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:12:50] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:50] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:12:53] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:53] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:12:55] "GET /chatbot/ev_next/?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:12:55] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:12:56] "GET /chatbot/ev_next?cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:12:57] "GET /chatbot/ev_next/?cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:13:01] "GET /chatbot/fig_who?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:01] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:13:01] "GET /chatbot/retrieve_question_with_id?id=2 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:01] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:13:03] "GET /chatbot/ev_next?cur_ev_id=16&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:04] "GET /chatbot/ev_next/?cur_ev_id=16&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:04] "GET /chatbot/retrieve_question_with_id?id=17 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:04] "GET /chatbot/retrieve_question_with_id/?id=17 HTTP/1.1" 200 325
+[22/Nov/2017 04:13:04] "GET /chatbot/fig_who?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:04] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:13:04] "GET /chatbot/retrieve_question_with_id?id=8 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:04] "GET /chatbot/fig_who?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:04] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:13:04] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:13:04] "GET /chatbot/retrieve_question_with_id?id=8 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:04] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:13:07] "GET /chatbot/ev_next/?cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:07] "GET /chatbot/retrieve_question_with_id/?id=12 HTTP/1.1" 200 361
+[22/Nov/2017 04:13:09] "GET /chatbot/fig_who?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:09] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:13:09] "GET /chatbot/retrieve_question_with_id?id=0 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:09] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:13:10] "GET /chatbot/fig_who?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:10] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:13:10] "GET /chatbot/retrieve_question_with_id?id=8 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:10] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:13:12] "GET /chatbot/ev_next/?cur_ev_id=12&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:12] "GET /chatbot/retrieve_question_with_id/?id=13 HTTP/1.1" 200 170
+[22/Nov/2017 04:13:12] "GET /chatbot/ev_next?cur_ev_id=17&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:12] "GET /chatbot/ev_next/?cur_ev_id=17&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:12] "GET /chatbot/retrieve_question_with_id?id=18 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:12] "GET /chatbot/retrieve_question_with_id/?id=18 HTTP/1.1" 200 403
+[22/Nov/2017 04:13:12] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+
+['이성계']
+<QuerySet [<Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['정몽주', '이방원']
+<QuerySet [<Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1370년 이성계는 애기살로 70명을 죽이고 장수를 설득하기 위해 머리 허벅지를 맞추는 등 미친 듯한 활쏨씨를 보였다>, <Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1382년 이방원이 과거에 응시하여 과거에 급제하였고 아버지인 이성계가 매우 기뻐하였다.>, <Event_Node: 1388년 우왕의 명으로 2차 요동정벌을 위해 이성계가 북상하였다>, <Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['정몽주']
+<QuerySet [<Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이방원']
+<QuerySet [<Event_Node: 1392년 이방원과 정몽주가 술자리를 함께하였고 이방원이 하여가를 읊자 정몽주가 단심가로 화답하였다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 이방원은 자객을 시켜 선지교에서 정몽주를 죽인다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1370년 이성계는 애기살로 70명을 죽이고 장수를 설득하기 위해 머리 허벅지를 맞추는 등 미친 듯한 활쏨씨를 보였다>, <Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1382년 이방원이 과거에 응시하여 과거에 급제하였고 아버지인 이성계가 매우 기뻐하였다.>, <Event_Node: 1388년 우왕의 명으로 2차 요동정벌을 위해 이성계가 북상하였다>, <Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이방원']
+<QuerySet [<Event_Node: 1388년 위화도 회군에서 이방원이 개경에 있는 어머니와 동생들을 구조하는 역할을 담당하였다.>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이방원과 정몽주가 술자리를 함께하였고 이방원이 하여가를 읊자 정몽주가 단심가로 화답하였다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 이방원은 자객을 시켜 선지교에서 정몽주를 죽인다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이방원']
+<QuerySet []>
+['이방원']
+<QuerySet []>
+['이방원']
+<QuerySet []>
+['정몽주', '이방원']
+<QuerySet []>
+['이성계']
+<QuerySet [<Event_Node: 1370년 이성계는 애기살로 70명을 죽이고 장수를 설득하기 위해 머리 허벅지를 맞추는 등 미친 듯한 활쏨씨를 보였다>, <Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1382년 이방원이 과거에 응시하여 과거에 급제하였고 아버지인 이성계가 매우 기뻐하였다.>, <Event_Node: 1388년 우왕의 명으로 2차 요동정벌을 위해 이성계가 북상하였다>, <Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>[22/Nov/2017 04:13:12] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:13:12] "GET /chatbot/retrieve_question_with_id?id=1 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:12] "GET /chatbot/retrieve_question_with_id/?id=1 HTTP/1.1" 200 369
+[22/Nov/2017 04:13:16] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=18&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:16] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=18&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:16] "GET /chatbot/retrieve_question_with_id?id=19 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:16] "GET /chatbot/retrieve_question_with_id/?id=19 HTTP/1.1" 200 171
+[22/Nov/2017 04:13:17] "GET /chatbot/ev_next/?cur_ev_id=13&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:17] "GET /chatbot/retrieve_question_with_id/?id=14 HTTP/1.1" 200 282
+[22/Nov/2017 04:13:20] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:20] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:20] "GET /chatbot/retrieve_question_with_id?id=12 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:20] "GET /chatbot/retrieve_question_with_id/?id=12 HTTP/1.1" 200 361
+[22/Nov/2017 04:13:22] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=1&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:22] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=1&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:13:22] "GET /chatbot/retrieve_question_with_id?id=6 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:22] "GET /chatbot/retrieve_question_with_id/?id=6 HTTP/1.1" 200 234
+[22/Nov/2017 04:13:22] "GET /chatbot/ev_next/?cur_ev_id=14&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:22] "GET /chatbot/retrieve_question_with_id/?id=16 HTTP/1.1" 200 273
+[22/Nov/2017 04:13:27] "GET /chatbot/ev_what?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:27] "GET /chatbot/ev_what/?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:27] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:13:32] "GET /chatbot/ev_next?cur_ev_id=12&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:32] "GET /chatbot/ev_next/?cur_ev_id=12&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:32] "GET /chatbot/retrieve_question_with_id?id=13 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:32] "GET /chatbot/retrieve_question_with_id/?id=13 HTTP/1.1" 200 170
+[22/Nov/2017 04:13:32] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=16&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:32] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=16&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:32] "GET /chatbot/retrieve_question_with_id/?id=18 HTTP/1.1" 200 403
+[22/Nov/2017 04:13:35] "GET /chatbot/ev_what?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:35] "GET /chatbot/ev_what/?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:13:35] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:13:38] "GET /chatbot/ev_next?cur_ev_id=13&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:39] "GET /chatbot/ev_next/?cur_ev_id=13&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:40] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=18&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:40] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=18&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:40] "GET /chatbot/retrieve_question_with_id?id=20 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:40] "GET /chatbot/retrieve_question_with_id/?id=20 HTTP/1.1" 200 228
+[22/Nov/2017 04:13:40] "GET /chatbot/retrieve_question_with_id?id=14 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:41] "GET /chatbot/retrieve_question_with_id/?id=14 HTTP/1.1" 200 282
+[22/Nov/2017 04:13:45] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=20&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:45] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=20&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:45] "GET /chatbot/retrieve_question_with_id?id=22 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:46] "GET /chatbot/retrieve_question_with_id/?id=22 HTTP/1.1" 200 330
+[22/Nov/2017 04:13:49] "GET /chatbot/fig_who?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:49] "GET /chatbot/ev_next?cur_ev_id=19&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:49] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:13:49] "GET /chatbot/ev_next/?cur_ev_id=19&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:49] "GET /chatbot/retrieve_question_with_id?id=2 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:49] "GET /chatbot/retrieve_question_with_id?id=20 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:49] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:13:49] "GET /chatbot/retrieve_question_with_id/?id=20 HTTP/1.1" 200 228
+[22/Nov/2017 04:13:54] "GET /chatbot/ev_what?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:54] "GET /chatbot/ev_what/?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:13:54] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:13:55] "GET /chatbot/retrieve_question_with_id?id=21 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:55] "GET /chatbot/retrieve_question_with_id/?id=21 HTTP/1.1" 200 222
+[22/Nov/2017 04:13:58] "GET /chatbot/ev_next?cur_ev_id=22&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:13:59] "GET /chatbot/ev_next/?cur_ev_id=22&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:13:59] "GET /chatbot/retrieve_question_with_id?id=24 HTTP/1.1" 301 0
+[22/Nov/2017 04:13:59] "GET /chatbot/retrieve_question_with_id/?id=24 HTTP/1.1" 200 372
+[22/Nov/2017 04:14:02] "GET /chatbot/ev_what/?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:14:02] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:14:04] "GET /chatbot/ev_next?cur_ev_id=24&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:14:04] "GET /chatbot/ev_next/?cur_ev_id=24&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:14:04] "GET /chatbot/retrieve_question_with_id?id=25 HTTP/1.1" 301 0
+[22/Nov/2017 04:14:04] "GET /chatbot/retrieve_question_with_id/?id=25 HTTP/1.1" 200 356
+[22/Nov/2017 04:14:07] "GET /chatbot/ev_next?cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:14:07] "GET /chatbot/ev_next/?cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:14:07] "GET /chatbot/retrieve_question_with_id/?id=1 HTTP/1.1" 200 369
+[22/Nov/2017 04:14:13] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:14:13] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:14:17] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:14:17] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:14:25] "GET /chatbot/ev_next?cur_ev_id=25&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:14:25] "GET /chatbot/ev_next/?cur_ev_id=25&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:14:25] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:14:36] "GET /chatbot/ev_next?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:14:36] "GET /chatbot/ev_next/?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:14:36] "GET /chatbot/retrieve_question_with_id?id=27 HTTP/1.1" 301 0
+[22/Nov/2017 04:14:36] "GET /chatbot/retrieve_question_with_id/?id=27 HTTP/1.1" 200 338
+[22/Nov/2017 04:14:43] "GET /chatbot/ev_next?cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:14:43] "GET /chatbot/ev_next/?cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:14:46] "GET /chatbot/ev_next/?cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:14:48] "GET /chatbot/ev_next?cur_ev_id=20&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:14:48] "GET /chatbot/ev_next/?cur_ev_id=20&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:14:48] "GET /chatbot/retrieve_question_with_id?id=21 HTTP/1.1" 301 0
+[22/Nov/2017 04:14:48] "GET /chatbot/retrieve_question_with_id/?id=21 HTTP/1.1" 200 222
+[22/Nov/2017 04:14:51] "GET /chatbot/ev_next?cur_ev_id=21&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:14:51] "GET /chatbot/ev_next/?cur_ev_id=21&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:14:51] "GET /chatbot/retrieve_question_with_id?id=22 HTTP/1.1" 301 0
+[22/Nov/2017 04:14:51] "GET /chatbot/retrieve_question_with_id/?id=22 HTTP/1.1" 200 330
+[22/Nov/2017 04:14:51] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:14:52] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:14:55] "GET /chatbot/ev_next?cur_ev_id=22&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:14:55] "GET /chatbot/ev_next/?cur_ev_id=22&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:14:55] "GET /chatbot/retrieve_question_with_id?id=24 HTTP/1.1" 301 0
+[22/Nov/2017 04:14:55] "GET /chatbot/retrieve_question_with_id/?id=24 HTTP/1.1" 200 372
+[22/Nov/2017 04:15:01] "GET /chatbot/ev_next?cur_ev_id=24&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:15:01] "GET /chatbot/ev_next/?cur_ev_id=24&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:15:01] "GET /chatbot/retrieve_question_with_id?id=25 HTTP/1.1" 301 0
+[22/Nov/2017 04:15:01] "GET /chatbot/retrieve_question_with_id/?id=25 HTTP/1.1" 200 356
+[22/Nov/2017 04:15:51] "GET /chatbot/ev_next?cur_ev_id=25&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:15:51] "GET /chatbot/ev_next/?cur_ev_id=25&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:15:51] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:16:04] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:16:11] "GET /chatbot/ev_next?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:16:11] "GET /chatbot/ev_next/?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:16:11] "GET /chatbot/retrieve_question_with_id?id=27 HTTP/1.1" 301 0
+[22/Nov/2017 04:16:11] "GET /chatbot/retrieve_question_with_id/?id=27 HTTP/1.1" 200 338
+[22/Nov/2017 04:16:55] "GET /chatbot/retrieve_question_with_id?id=11 HTTP/1.1" 301 0
+[22/Nov/2017 04:16:55] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:16:57] "GET /chatbot/ev_what?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:16:57] "GET /chatbot/ev_what/?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:16:57] "GET /chatbot/retrieve_question_with_id?id=10 HTTP/1.1" 301 0
+[22/Nov/2017 04:16:57] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:17:03] "GET /chatbot/ev_next?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:17:03] "GET /chatbot/ev_next/?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:17:03] "GET /chatbot/retrieve_question_with_id?id=11 HTTP/1.1" 301 0
+[22/Nov/2017 04:17:03] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:17:13] "GET /chatbot/ev_what?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:17:13] "GET /chatbot/ev_what/?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:17:13] "GET /chatbot/retrieve_question_with_id?id=10 HTTP/1.1" 301 0
+[22/Nov/2017 04:17:14] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:17:23] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:17:24] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:17:24] "GET /chatbot/retrieve_question_with_id?id=11 HTTP/1.1" 301 0
+[22/Nov/2017 04:17:24] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:17:33] "GET /chatbot/retrieve_question_with_id?id=11 HTTP/1.1" 301 0
+[22/Nov/2017 04:17:34] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:19:46] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:19:46] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:19:50] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:19:50] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:19:56] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:19:57] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:20:02] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:20:02] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:20:09] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:20:09] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:20:09] "GET /chatbot/retrieve_question_with_id/?id=21 HTTP/1.1" 200 222
+[22/Nov/2017 04:20:14] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=21&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:20:15] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=21&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:20:15] "GET /chatbot/retrieve_question_with_id/?id=25 HTTP/1.1" 200 356
+[22/Nov/2017 04:20:28] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:20:31] "GET /chatbot/ev_what/?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:20:31] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:20:38] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:20:40] "GET /chatbot/ev_next/?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:20:40] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:22:12] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=25&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:22:13] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=25&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:22:13] "GET /chatbot/retrieve_question_with_id?id=27 HTTP/1.1" 301 0
+[22/Nov/2017 04:22:13] "GET /chatbot/retrieve_question_with_id/?id=27 HTTP/1.1" 200 338
+[22/Nov/2017 04:22:21] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:22:21] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:22:24] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:22:25] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:22:34] "GET /chatbot/fig_next?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:22:34] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:23:52] "GET /chatbot/ev_what/?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:23:52] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:23:57] "GET /chatbot/ev_what/?event_tag_name=%EC%9C%84%ED%99%94%EB%8F%84%20%ED%9A%8C%EA%B5%B0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:23:57] "GET /chatbot/retrieve_question_with_id/?id=10 HTTP/1.1" 200 240
+[22/Nov/2017 04:24:02] "GET /chatbot/ev_next?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:24:02] "GET /chatbot/ev_next/?cur_ev_id=10&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:24:02] "GET /chatbot/retrieve_question_with_id/?id=11 HTTP/1.1" 200 282
+[22/Nov/2017 04:24:07] "GET /chatbot/ev_next?cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:24:07] "GET /chatbot/ev_next/?cur_ev_id=11&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:24:07] "GET /chatbot/retrieve_question_with_id?id=12 HTTP/1.1" 301 0
+[22/Nov/2017 04:24:07] "GET /chatbot/retrieve_question_with_id/?id=12 HTTP/1.1" 200 361
+[22/Nov/2017 04:24:12] "GET /chatbot/ev_next?cur_ev_id=12&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:24:12] "GET /chatbot/ev_next/?cur_ev_id=12&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:24:12] "GET /chatbot/retrieve_question_with_id/?id=13 HTTP/1.1" 200 170
+[22/Nov/2017 04:24:17] "GET /chatbot/ev_next?cur_ev_id=13&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:24:17] "GET /chatbot/ev_next/?cur_ev_id=13&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:24:17] "GET /chatbot/retrieve_question_with_id/?id=14 HTTP/1.1" 200 282
+[22/Nov/2017 04:24:22] "GET /chatbot/ev_next?cur_ev_id=14&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:24:22] "GET /chatbot/ev_next/?cur_ev_id=14&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:24:22] "GET /chatbot/retrieve_question_with_id/?id=16 HTTP/1.1" 200 273
+[22/Nov/2017 04:24:27] "GET /chatbot/ev_what/?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:24:27] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:24:32] "GET /chatbot/ev_next?cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:24:32] "GET /chatbot/ev_next/?cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:24:32] "GET /chatbot/retrieve_question_with_id/?id=1 HTTP/1.1" 200 369
+[22/Nov/2017 04:24:37] "GET /chatbot/ev_next?cur_ev_id=1&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:24:37] "GET /chatbot/ev_next/?cur_ev_id=1&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:24:45] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:24:45] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:24:50] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:24:50] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:25:05] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:25:10] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EB%B0%A9%EC%9B%90&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:25:10] "GET /chatbot/retrieve_question_with_id/?id=8 HTTP/1.1" 200 335
+[22/Nov/2017 04:25:16] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=8&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:25:17] "GET /chatbot/retrieve_question_with_id/?id=21 HTTP/1.1" 200 222
+[22/Nov/2017 04:25:22] "GET /chatbot/fig_next/?figures=%5B%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=21&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:25:22] "GET /chatbot/retrieve_question_with_id/?id=25 HTTP/1.1" 200 356
+[22/Nov/2017 04:25:31] "GET /chatbot/fig_next?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=25&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:25:31] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=25&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:25:31] "GET /chatbot/retrieve_question_with_id/?id=26 HTTP/1.1" 200 254
+[22/Nov/2017 04:25:39] "GET /chatbot/ev_next?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:25:39] "GET /chatbot/ev_next/?cur_ev_id=26&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 35
+[22/Nov/2017 04:25:39] "GET /chatbot/retrieve_question_with_id/?id=27 HTTP/1.1" 200 338
+[22/Nov/2017 04:25:45] "GET /chatbot/ev_next?cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:25:45] "GET /chatbot/ev_next/?cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:25:53] "GET /chatbot/fig_next/?figures=%5B%22%EC%A0%95%EB%AA%BD%EC%A3%BC%22%2C%22%EC%9D%B4%EC%84%B1%EA%B3%84%22%2C%22%EC%9D%B4%EB%B0%A9%EC%9B%90%22%5D&cur_ev_id=27&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:25:55] "GET /chatbot/fig_who/?figure=%EC%A0%95%EB%AA%BD%EC%A3%BC&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:25:55] "GET /chatbot/retrieve_question_with_id/?id=2 HTTP/1.1" 200 207
+[22/Nov/2017 04:25:57] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:25:57] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:26:01] "GET /chatbot/fig_who/?figure=%EC%9D%B4%EC%84%B1%EA%B3%84&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:26:01] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:26:09] "GET /chatbot/ev_what/?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:26:09] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+[22/Nov/2017 04:26:16] "GET /chatbot/ev_next/?cur_ev_id=0&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:26:16] "GET /chatbot/retrieve_question_with_id/?id=1 HTTP/1.1" 200 369
+[22/Nov/2017 04:26:23] "GET /chatbot/ev_next?cur_ev_id=1&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 301 0
+[22/Nov/2017 04:26:23] "GET /chatbot/ev_next/?cur_ev_id=1&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 20
+[22/Nov/2017 04:26:29] "GET /chatbot/ev_what/?event_tag_name=%EC%A0%9C1%EC%B0%A8%20%EC%9A%94%EB%8F%99%EC%A0%95%EB%B2%8C&events_can_be_seen=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C24%2C25%2C26%2C27%5D HTTP/1.1" 200 34
+[22/Nov/2017 04:26:29] "GET /chatbot/retrieve_question_with_id/?id=0 HTTP/1.1" 200 249
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+[22/Nov/2017 08:51:20] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 400 60735
+Not Found: /
+[22/Nov/2017 08:55:02] "GET / HTTP/1.1" 404 2031
+Not Found: /robots.txt
+[22/Nov/2017 08:55:02] "GET /robots.txt HTTP/1.1" 404 2079
+Not Found: /sitemap.xml
+[22/Nov/2017 08:55:03] "GET /sitemap.xml HTTP/1.1" 404 2082
+Not Found: /favicon.ico
+[22/Nov/2017 08:55:04] "GET /favicon.ico HTTP/1.1" 404 2082
+Not Found: /
+[22/Nov/2017 08:55:07] "GET / HTTP/1.1" 404 2031
+Not Found: /
+[22/Nov/2017 13:33:27] "GET / HTTP/1.1" 404 2031
+Not Found: /manager/html
+[22/Nov/2017 19:55:59] "GET /manager/html HTTP/1.1" 404 2085
+Not Found: /
+[22/Nov/2017 22:56:17] "GET / HTTP/1.1" 404 2031
+Not Found: /
+[22/Nov/2017 22:56:18] "GET / HTTP/1.1" 404 2031
+Not Found: //__
+[22/Nov/2017 22:56:18] "GET //__ HTTP/1.1" 404 2058
+Not Found: /
+[22/Nov/2017 22:56:19] "GET / HTTP/1.1" 404 2031
+Not Found: /invoker/JMXInvokerServlet
+[22/Nov/2017 23:02:50] "GET /invoker/JMXInvokerServlet HTTP/1.1" 404 2119
+Not Found: /
+[23/Nov/2017 00:18:28] "GET / HTTP/1.1" 404 2031
+Not Found: /manager/html
+[23/Nov/2017 02:33:01] "GET /manager/html HTTP/1.1" 404 2085
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+[23/Nov/2017 02:35:37] "GET / HTTP/1.0" 400 60217
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[23/Nov/2017 02:35:37] "GET / HTTP/1.0" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/john/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 88, in handle_error
+    super(ServerHandler, self).handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/john/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 155, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Not Found: /
+[23/Nov/2017 02:42:04] "GET / HTTP/1.1" 404 2031
+Not Found: /manager/html
+[23/Nov/2017 03:45:55] "GET /manager/html HTTP/1.1" 404 2085
+Not Found: /
+[23/Nov/2017 03:53:52] "GET / HTTP/1.1" 404 2031
+[23/Nov/2017 04:50:47] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+[23/Nov/2017 04:50:47] "  *%à     Cookie: mstshash=Test" 400 -
+[23/Nov/2017 04:50:48] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+[23/Nov/2017 04:50:48] "  *%à     Cookie: mstshash=Test" 400 -
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+[23/Nov/2017 06:35:32] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 400 60735
+Not Found: /manager/html
+[23/Nov/2017 11:12:54] "GET /manager/html HTTP/1.1" 404 2085
+Not Found: /manager/html
+[23/Nov/2017 11:20:39] "GET /manager/html HTTP/1.1" 404 2085
+Not Found: /
+[23/Nov/2017 11:22:49] "GET / HTTP/1.1" 404 2026
+Not Found: /
+[23/Nov/2017 14:00:41] "GET / HTTP/1.1" 404 2031
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+[23/Nov/2017 18:57:36] "GET / HTTP/1.0" 400 60438
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[23/Nov/2017 18:57:36] "GET / HTTP/1.0" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/john/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 88, in handle_error
+    super(ServerHandler, self).handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/john/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 155, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+[23/Nov/2017 18:57:36] "GET / HTTP/1.0" 400 60049
+[23/Nov/2017 18:57:37] "GET / HTTP/1.0" 400 60049
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+[23/Nov/2017 18:57:37] "GET / HTTP/1.1" 400 60049
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+[23/Nov/2017 18:57:38] "GET / HTTP/1.0" 400 60049
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[23/Nov/2017 18:57:38] "GET / HTTP/1.0" 500 59
+
+['이성계']
+<QuerySet [<Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이방원']
+<QuerySet [<Event_Node: 1388년 위화도 회군에서 이방원이 개경에 있는 어머니와 동생들을 구조하는 역할을 담당하였다.>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이방원과 정몽주가 술자리를 함께하였고 이방원이 하여가를 읊자 정몽주가 단심가로 화답하였다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 이방원은 자객을 시켜 선지교에서 정몽주를 죽인다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계']
+<QuerySet [<Event_Node: 1380년 이성계와 정몽주는 함께 왜구를 토벌하였다>, <Event_Node: 1380년 왜구 토벌 이후 이성계가 잔치에서 고려를 뒤엎겠다는 속내를 내비치자 정몽주는 노여움을 참지 못한다.>, <Event_Node: 1382년 이방원이 과거에 응시하여 과거에 급제하였고 아버지인 이성계가 매우 기뻐하였다.>, <Event_Node: 1388년 우왕의 명으로 2차 요동정벌을 위해 이성계가 북상하였다>, <Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['정몽주', '이성계']
+<QuerySet [<Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['정몽주', '이성계']
+<QuerySet [<Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['정몽주', '이성계']
+<QuerySet [<Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계', '이방원']
+<QuerySet []>
+['이성계']
+<QuerySet [<Event_Node: 1388년 이성계가 역심을 품고 북상하다 위화도에서 회군하여 개경을 공격하였다>, <Event_Node: 1388년 이성계가 최영을 몰아내었다.>, <Event_Node: 1389년 이성계가 우왕과 창왕이 신돈의 태생이라 주장하며 공양왕을 옹립하였다>, <Event_Node: 1389년 정몽주는 흥국사 9공신 중 하나로 이성계파로 여겨지게된다>, <Event_Node: 1389년 위화도 회군 이후 정몽주는 이성계의 저의가 다른 곳에 있다는 것을 느끼고 이성계를 견제한다.>, <Event_Node: 1392년 이성계가 사냥 중 낙마하였다.>, <Event_Node: 1392년 정몽주가 이성계 일파를 제거하려 하였다>, <Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이성계의 기색을 살피기 위해 병문안을 핑계로 정몽주가 이성계의 집을 방문한다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계', '이방원']
+<QuerySet [<Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계', '이방원']
+<QuerySet [<Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계', '이방원']
+<QuerySet [<Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['정몽주', '이성계', '이방원']
+<QuerySet []>
+['정몽주', '이성계']
+<QuerySet []>
+['이성계', '이방원']
+<QuerySet []>
+['이성계', '이방원']
+<QuerySet [<Event_Node: 1392년 이방원이 이성계를 개경으로 데려간다.>, <Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['이성계', '이방원']
+<QuerySet [<Event_Node: 1392년 이방원은 정몽주가 이성계의 신왕조 수립에 동참하지 않을 것이라고 판단하였다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['정몽주', '이방원']
+<QuerySet [<Event_Node: 1392년 이방원은 자객을 시켜 선지교에서 정몽주를 죽인다.>, <Event_Node: 1392년 독단으로 정몽주를 죽인 것을 안 이성계는 대노하여 이방원을 크게 혼낸다>]>
+['정몽주', '이성계', '이방원']
+<QuerySet []>
+----------------------------------------
+Exception happened during processing of request from ('155.94.88.58', 58460)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('98.115.147.36', 10277)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request fromTraceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/john/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 88, in handle_error
+    super(ServerHandler, self).handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/john/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 155, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Invalid HTTP_HOST header: '127.0.0.1'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[23/Nov/2017 18:57:39] "GET / HTTP/1.1" 400 60439
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+[23/Nov/2017 18:57:40] "HEAD /manager/html HTTP/1.0" 400 60054
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[23/Nov/2017 18:57:40] "HEAD /manager/html HTTP/1.0" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/john/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 88, in handle_error
+    super(ServerHandler, self).handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/john/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 155, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+[23/Nov/2017 21:03:29] "GET / HTTP/1.0" 400 60439
+[23/Nov/2017 21:03:30] "GET / HTTP/1.0" 400 60050
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+[23/Nov/2017 21:03:30] "GET / HTTP/1.0" 400 60050
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+[23/Nov/2017 21:03:31] "GET / HTTP/1.1" 400 60050
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+[23/Nov/2017 21:03:32] "GET / HTTP/1.0" 400 60050
+Invalid HTTP_HOST header: '127.0.0.1'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[23/Nov/2017 21:03:33] "GET / HTTP/1.1" 400 60440
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[23/Nov/2017 21:03:33] "GET / HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/john/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 88, in handle_error
+    super(ServerHandler, self).handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/john/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 155, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Invalid HTTP_HOST header: 'hyungshike-6337:8080'. You may need to add 'hyungshike-6337' to ALLOWED_HOSTS.
+[23/Nov/2017 21:03:34] "HEAD /manager/html HTTP/1.0" 400 60055
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[23/Nov/2017 21:03:34] "HEAD /manager/html HTTP/1.0" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/john/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 88, in handle_error
+    super(ServerHandler, self).handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/john/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 155, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Not Found: /
+[23/Nov/2017 23:08:43] "GET / HTTP/1.1" 404 2026
+Not Found: /manager/html
+[24/Nov/2017 00:23:48] "GET /manager/html HTTP/1.1" 404 2085
+Not Found: /cgi-bin/authLogin.cgi
+[24/Nov/2017 02:03:54] "POST /cgi-bin/authLogin.cgi HTTP/1.1" 404 2113
+[24/Nov/2017 02:20:37] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+[24/Nov/2017 02:20:37] "  *%à     Cookie: mstshash=Test" 400 -
+[24/Nov/2017 02:20:37] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+[24/Nov/2017 02:20:37] "  *%à     Cookie: mstshash=Test" 400 -
+Not Found: /manager/html
+[24/Nov/2017 02:25:40] "GET /manager/html HTTP/1.1" 404 2085
+Not Found: /manager/html
+[24/Nov/2017 03:30:09] "GET /manager/html HTTP/1.1" 404 2085
+[24/Nov/2017 03:35:52] "GET /admin HTTP/1.1" 301 0
+[24/Nov/2017 03:35:52] "GET /admin/ HTTP/1.1" 302 0
+[24/Nov/2017 03:35:52] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+[24/Nov/2017 03:35:52] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[24/Nov/2017 03:35:52] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[24/Nov/2017 03:35:52] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[24/Nov/2017 03:35:52] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[24/Nov/2017 03:35:52] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+Not Found: /favicon.ico
+[24/Nov/2017 03:35:53] "GET /favicon.ico HTTP/1.1" 404 2082
+Not Found: /time_annotation/putter/
+[24/Nov/2017 03:35:59] "GET /time_annotation/putter/ HTTP/1.1" 404 2118
