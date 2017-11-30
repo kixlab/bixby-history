@@ -1345,3 +1345,542 @@ Not Found: /favicon.ico
 [24/Nov/2017 03:35:53] "GET /favicon.ico HTTP/1.1" 404 2082
 Not Found: /time_annotation/putter/
 [24/Nov/2017 03:35:59] "GET /time_annotation/putter/ HTTP/1.1" 404 2118
+System check identified some issues:
+
+WARNINGS:
+chatbot.Event_Node.Prerequisite_Event: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 1 issue (0 silenced).
+[30/Nov/2017 07:13:41] "GET /chatbot/ HTTP/1.1" 200 1957
+[30/Nov/2017 07:13:41] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 1690
+[30/Nov/2017 07:14:11] "GET /admin HTTP/1.1" 301 0
+[30/Nov/2017 07:14:11] "GET /admin/ HTTP/1.1" 302 0
+[30/Nov/2017 07:14:11] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+[30/Nov/2017 07:14:11] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[30/Nov/2017 07:14:11] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[30/Nov/2017 07:14:12] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[30/Nov/2017 07:14:12] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[30/Nov/2017 07:14:12] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[30/Nov/2017 07:14:19] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[30/Nov/2017 07:14:19] "GET /admin/ HTTP/1.1" 200 10451
+[30/Nov/2017 07:14:20] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[30/Nov/2017 07:14:20] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[30/Nov/2017 07:14:20] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[30/Nov/2017 07:14:20] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[30/Nov/2017 07:14:25] "GET /admin/chatbot/curriculum/ HTTP/1.1" 200 4218
+[30/Nov/2017 07:14:25] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[30/Nov/2017 07:14:25] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[30/Nov/2017 07:14:25] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[30/Nov/2017 07:14:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[30/Nov/2017 07:14:25] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[30/Nov/2017 07:14:25] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[30/Nov/2017 07:14:25] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[30/Nov/2017 07:14:25] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[30/Nov/2017 07:14:25] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[30/Nov/2017 07:14:25] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[30/Nov/2017 07:14:25] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[30/Nov/2017 07:14:26] "GET /admin/chatbot/curriculum/10/change/ HTTP/1.1" 200 12066
+[30/Nov/2017 07:14:27] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[30/Nov/2017 07:14:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[30/Nov/2017 07:14:27] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[30/Nov/2017 07:14:27] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[30/Nov/2017 07:14:27] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[30/Nov/2017 07:14:27] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[30/Nov/2017 07:16:28] "POST /admin/chatbot/curriculum/10/change/ HTTP/1.1" 302 0
+[30/Nov/2017 07:16:29] "GET /admin/chatbot/curriculum/ HTTP/1.1" 200 4409
+[30/Nov/2017 07:16:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[30/Nov/2017 07:16:29] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[30/Nov/2017 07:16:31] "GET /chatbot/ HTTP/1.1" 200 1957
+[30/Nov/2017 07:16:31] "GET /static/chatbot/chatbot.css HTTP/1.1" 304 0
+[30/Nov/2017 07:16:31] "GET /static/chatbot/chatbot.js HTTP/1.1" 304 0
+[30/Nov/2017 07:16:31] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 2197
+[30/Nov/2017 07:16:51] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:16:51] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B%5D HTTP/1.1" 200 2015
+[30/Nov/2017 07:34:39] "GET /chatbot/ HTTP/1.1" 200 1957
+[30/Nov/2017 07:34:49] "GET /chatbot/ HTTP/1.1" 200 1957
+[30/Nov/2017 07:34:50] "GET /static/chatbot/chatbot.css HTTP/1.1" 200 2386
+[30/Nov/2017 07:34:51] "GET /static/chatbot/chatbot.js HTTP/1.1" 200 26844
+[30/Nov/2017 07:34:51] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 2197
+[30/Nov/2017 07:35:53] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:35:53] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B%5D HTTP/1.1" 200 2015
+[30/Nov/2017 07:37:36] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:37:36] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%5D HTTP/1.1" 200 2015
+[30/Nov/2017 07:38:52] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C1%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:38:53] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C1%5D HTTP/1.1" 200 2015
+[30/Nov/2017 07:39:45] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:39:45] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%5D HTTP/1.1" 200 1747
+[30/Nov/2017 07:41:07] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:41:07] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%5D HTTP/1.1" 200 6418
+[30/Nov/2017 07:43:40] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%2C3%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:43:41] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%2C3%5D HTTP/1.1" 200 6418
+[30/Nov/2017 07:44:00] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%2C3%2C4%5D HTTP/1.1" 301 0
+Performing system checks...
+
+November 30, 2017 - 07:12:38
+Django version 1.11.5, using settings 'bixbyhistory.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+정몽주
+['이방원']
+정몽주
+['이방원']
+이방원
+0
+9
+<QuerySet [<Event_Node: 이방원_나는 이방원이다./n
+아버지인 이성계를 따라 아버지의 뜻을 이뤄나가고 있지./n
+옛날에 과거에 급제 했을 때는 아버지가 나를 참 좋아했었던 것 같은데/n
+최근에 있었던 일은 아버지가 탐탁치 않아 하시는 것 같단 말이지...>, <Event_Node: 이방원_정몽주?/n
+그 사람은 죽을 필요가 있어서 죽은 거다.>]>
+정몽주
+['이방원']
+이방원
+0
+9
+<QuerySet [<Event_Node: 이방원_나는 이방원이다./n
+아버지인 이성계를 따라 아버지의 뜻을 이뤄나가고 있지./n
+옛날에 과거에 급제 했을 때는 아버지가 나를 참 좋아했었던 것 같은데/n
+최근에 있었던 일은 아버지가 탐탁치 않아 하시는 것 같단 말이지...>, <Event_Node: 이방원_정몽주?/n
+그 사람은 죽을 필요가 있어서 죽은 거다.>]>
+이방원
+1
+8
+<QuerySet [<Event_Node: 이방원_나는 이방원이다./n
+아버지인 이성계를 따라 아버지의 뜻을 이뤄나가고 있지./n
+옛날에 과거에 급제 했을 때는 아버지가 나를 참 좋아했었던 것 같은데/n
+최근에 있었던 일은 아버지가 탐탁치 않아 하시는 것 같단 말이지...>, <Event_Node: 이방원_정몽주?/n
+그 사람은 죽을 필요가 있어서 죽은 거다.>]>
+이방원
+2
+7
+<QuerySet [<Event_Node: 이방원_나는 이방원이다./n
+아버지인 이성계를 따라 아버지의 뜻을 이뤄나가고 있지./n
+옛날에 과거에 급제 했을 때는 아버지가 나를 참 좋아했었던 것 같은데/n
+최근에 있었던 일은 아버지가 탐탁치 않아 하시는 것 같단 말이지...>, <Event_Node: 이방원_정몽주?/n
+그 사람은 죽을 필요가 있어서 죽은 거다.>]>
+이성계
+2
+7
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>]>
+이성계
+3
+6
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>
+이성계
+4
+5
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>
+이성계
+5
+4
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_최영과 우왕은 정말 명나라를 쳐야만한다고 생각했었던 것 같았지./n
+하지만 내 생각은 달랐다./n
+명나라는 대국일 뿐만 아니라 당시의 계절 등도 우리에게는 불리한 정황이었지./n
+그래서 나는 요동으로 향하던 중 위화도에서 회군하여 최영을 제거하고 우왕을 폐하는 결단을 내렸다./n
+그리고 나는 나의 목적에 대해서 더 뚜렷하게 생각하게 되었지./n
+그 때만 해도 정몽주는 나를 도왔었는데... 어떤 것이 잘못된 것인지..>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>[30/Nov/2017 07:44:00] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%2C3%2C4%5D HTTP/1.1" 200 8418
+[30/Nov/2017 07:45:22] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%2C3%2C4%2C5%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:45:22] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%2C3%2C4%2C5%5D HTTP/1.1" 200 8418
+[30/Nov/2017 07:45:30] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:45:30] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%5D HTTP/1.1" 200 8418
+[30/Nov/2017 07:46:37] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:46:37] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%5D HTTP/1.1" 200 8418
+[30/Nov/2017 07:46:50] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C2%5D HTTP/1.1" 301 0
+
+이성계
+6
+3
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_최영과 우왕은 정말 명나라를 쳐야만한다고 생각했었던 것 같았지./n
+하지만 내 생각은 달랐다./n
+명나라는 대국일 뿐만 아니라 당시의 계절 등도 우리에게는 불리한 정황이었지./n
+그래서 나는 요동으로 향하던 중 위화도에서 회군하여 최영을 제거하고 우왕을 폐하는 결단을 내렸다./n
+그리고 나는 나의 목적에 대해서 더 뚜렷하게 생각하게 되었지./n
+그 때만 해도 정몽주는 나를 도왔었는데... 어떤 것이 잘못된 것인지..>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>
+이성계
+7
+2
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_최영과 우왕은 정말 명나라를 쳐야만한다고 생각했었던 것 같았지./n
+하지만 내 생각은 달랐다./n
+명나라는 대국일 뿐만 아니라 당시의 계절 등도 우리에게는 불리한 정황이었지./n
+그래서 나는 요동으로 향하던 중 위화도에서 회군하여 최영을 제거하고 우왕을 폐하는 결단을 내렸다./n
+그리고 나는 나의 목적에 대해서 더 뚜렷하게 생각하게 되었지./n
+그 때만 해도 정몽주는 나를 도왔었는데... 어떤 것이 잘못된 것인지..>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>
+이성계
+8
+1
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_최영과 우왕은 정말 명나라를 쳐야만한다고 생각했었던 것 같았지./n
+하지만 내 생각은 달랐다./n
+명나라는 대국일 뿐만 아니라 당시의 계절 등도 우리에게는 불리한 정황이었지./n
+그래서 나는 요동으로 향하던 중 위화도에서 회군하여 최영을 제거하고 우왕을 폐하는 결단을 내렸다./n
+그리고 나는 나의 목적에 대해서 더 뚜렷하게 생각하게 되었지./n
+그 때만 해도 정몽주는 나를 도왔었는데... 어떤 것이 잘못된 것인지..>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>
+이성계
+8
+1
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_최영과 우왕은 정말 명나라를 쳐야만한다고 생각했었던 것 같았지./n
+하지만 내 생각은 달랐다./n
+명나라는 대국일 뿐만 아니라 당시의 계절 등도 우리에게는 불리한 정황이었지./n
+그래서 나는 요동으로 향하던 중 위화도에서 회군하여 최영을 제거하고 우왕을 폐하는 결단을 내렸다./n
+그리고 나는 나의 목적에 대해서 더 뚜렷하게 생각하게 되었지./n
+그 때만 해도 정몽주는 나를 도왔었는데... 어떤 것이 잘못된 것인지..>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>[30/Nov/2017 07:46:50] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C2%5D HTTP/1.1" 200 8418
+[30/Nov/2017 07:46:56] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C2%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:46:56] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C2%5D HTTP/1.1" 200 4668
+[30/Nov/2017 07:48:19] "GET /chatbot/ HTTP/1.1" 200 1957
+[30/Nov/2017 07:48:20] "GET /static/chatbot/chatbot.js HTTP/1.1" 304 0
+[30/Nov/2017 07:48:20] "GET /static/chatbot/chatbot.css HTTP/1.1" 304 0
+[30/Nov/2017 07:48:20] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 2197
+[30/Nov/2017 07:48:43] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B%5D HTTP/1.1" 200 2015
+[30/Nov/2017 07:50:25] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%5D HTTP/1.1" 200 2015
+[30/Nov/2017 07:50:29] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:50:29] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%5D HTTP/1.1" 200 1747
+[30/Nov/2017 07:51:41] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:51:42] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%5D HTTP/1.1" 200 6418
+[30/Nov/2017 07:51:46] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C2%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:51:46] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C2%5D HTTP/1.1" 200 2015
+[30/Nov/2017 07:52:44] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C2%2C1%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:52:44] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C2%2C1%5D HTTP/1.1" 200 2015
+[30/Nov/2017 07:52:50] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%2C1%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:52:50] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%2C1%5D HTTP/1.1" 200 6418
+[30/Nov/2017 07:52:55] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%2C1%2C6%5D HTTP/1.1" 301 0
+
+이방원
+8
+1
+<QuerySet [<Event_Node: 이방원_나는 이방원이다./n
+아버지인 이성계를 따라 아버지의 뜻을 이뤄나가고 있지./n
+옛날에 과거에 급제 했을 때는 아버지가 나를 참 좋아했었던 것 같은데/n
+최근에 있었던 일은 아버지가 탐탁치 않아 하시는 것 같단 말이지...>, <Event_Node: 이방원_정몽주?/n
+그 사람은 죽을 필요가 있어서 죽은 거다.>, <Event_Node: 이방원_아버지도 참 답이 없으시지./n
+결국 새 나라를 세우는 데 방해가 되는 인물은 제거해야 마땅한 것을./n
+위화도 회군 이후에 아버지의 계획을 더 정확히 알게된 정몽주는 아버지의 계획을 수포로 돌아가게 만드려고 했지./n
+아버지가 낙마하셔서 다치셨을 때를 노려서 우리 세력을 치려 한 거야./n
+내가 겨우 아버지를 개경으로 데려가서 정몽주를 막을 수 있었기에 망정이지, 그렇지 못했다면.../n
+그 이후로 정몽주가 아버지 병문안을 와서 나와 술을 한 잔 했을 때 나는 그의 마음이 그리 확고한지 보고 싶었어/n
+그렇게 고려에 충성스러운 사람일 줄, 누가 알았겠어/n
+절대 고려를 배신할 생각이 없는자를, 우리 아버지의 계획에 방해되는 자를 내가 살려둘 이유는 전혀 없었지.>]>
+정몽주
+['이방원']
+이방원
+0
+9
+<QuerySet [<Event_Node: 이방원_나는 이방원이다./n
+아버지인 이성계를 따라 아버지의 뜻을 이뤄나가고 있지./n
+옛날에 과거에 급제 했을 때는 아버지가 나를 참 좋아했었던 것 같은데/n
+최근에 있었던 일은 아버지가 탐탁치 않아 하시는 것 같단 말이지...>, <Event_Node: 이방원_정몽주?/n
+그 사람은 죽을 필요가 있어서 죽은 거다.>]>
+이방원
+1
+8
+<QuerySet [<Event_Node: 이방원_나는 이방원이다./n
+아버지인 이성계를 따라 아버지의 뜻을 이뤄나가고 있지./n
+옛날에 과거에 급제 했을 때는 아버지가 나를 참 좋아했었던 것 같은데/n
+최근에 있었던 일은 아버지가 탐탁치 않아 하시는 것 같단 말이지...>, <Event_Node: 이방원_정몽주?/n
+그 사람은 죽을 필요가 있어서 죽은 거다.>]>
+이성계
+1
+8
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>]>
+이성계
+2
+7
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>
+이방원
+2
+7
+<QuerySet [<Event_Node: 이방원_나는 이방원이다./n
+아버지인 이성계를 따라 아버지의 뜻을 이뤄나가고 있지./n
+옛날에 과거에 급제 했을 때는 아버지가 나를 참 좋아했었던 것 같은데/n
+최근에 있었던 일은 아버지가 탐탁치 않아 하시는 것 같단 말이지...>, <Event_Node: 이방원_정몽주?/n
+그 사람은 죽을 필요가 있어서 죽은 거다.>]>
+이방원
+3
+6
+<QuerySet [<Event_Node: 이방원_나는 이방원이다./n
+아버지인 이성계를 따라 아버지의 뜻을 이뤄나가고 있지./n
+옛날에 과거에 급제 했을 때는 아버지가 나를 참 좋아했었던 것 같은데/n
+최근에 있었던 일은 아버지가 탐탁치 않아 하시는 것 같단 말이지...>, <Event_Node: 이방원_정몽주?/n
+그 사람은 죽을 필요가 있어서 죽은 거다.>]>
+이성계
+3
+6
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>
+이성계
+4
+5
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>[30/Nov/2017 07:52:55] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%2C1%2C6%5D HTTP/1.1" 200 6418
+[30/Nov/2017 07:53:22] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%2C1%2C6%2C7%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:53:22] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%2C1%2C6%2C7%5D HTTP/1.1" 200 6418
+[30/Nov/2017 07:53:28] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C2%2C1%2C6%2C7%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:53:28] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C2%2C1%2C6%2C7%5D HTTP/1.1" 200 2015
+[30/Nov/2017 07:53:30] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%2C1%2C6%2C7%5D HTTP/1.1" 200 6418
+[30/Nov/2017 07:53:42] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%2C1%2C6%2C7%2C4%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:53:42] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%2C1%2C6%2C7%2C4%5D HTTP/1.1" 200 8418
+[30/Nov/2017 07:53:46] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C2%2C1%2C6%2C7%2C4%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:53:46] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C2%2C1%2C6%2C7%2C4%5D HTTP/1.1" 200 2015
+
+이성계
+5
+4
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>
+이방원
+5
+4
+<QuerySet [<Event_Node: 이방원_나는 이방원이다./n
+아버지인 이성계를 따라 아버지의 뜻을 이뤄나가고 있지./n
+옛날에 과거에 급제 했을 때는 아버지가 나를 참 좋아했었던 것 같은데/n
+최근에 있었던 일은 아버지가 탐탁치 않아 하시는 것 같단 말이지...>, <Event_Node: 이방원_정몽주?/n
+그 사람은 죽을 필요가 있어서 죽은 거다.>]>
+이성계
+5
+4
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>
+이성계
+6
+3
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_최영과 우왕은 정말 명나라를 쳐야만한다고 생각했었던 것 같았지./n
+하지만 내 생각은 달랐다./n
+명나라는 대국일 뿐만 아니라 당시의 계절 등도 우리에게는 불리한 정황이었지./n
+그래서 나는 요동으로 향하던 중 위화도에서 회군하여 최영을 제거하고 우왕을 폐하는 결단을 내렸다./n
+그리고 나는 나의 목적에 대해서 더 뚜렷하게 생각하게 되었지./n
+그 때만 해도 정몽주는 나를 도왔었는데... 어떤 것이 잘못된 것인지..>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>
+이방원
+6
+3
+<QuerySet [<Event_Node: 이방원_나는 이방원이다./n
+아버지인 이성계를 따라 아버지의 뜻을 이뤄나가고 있지./n
+옛날에 과거에 급제 했을 때는 아버지가 나를 참 좋아했었던 것 같은데/n
+최근에 있었던 일은 아버지가 탐탁치 않아 하시는 것 같단 말이지...>, <Event_Node: 이방원_정몽주?/n
+그 사람은 죽을 필요가 있어서 죽은 거다.>]>
+이성계
+6
+3
+<QuerySet [<Event_Node: 이성계_나는 이성계라고 하네./n
+과거에는 고려를 홍건적과 왜구로부터 지키는 장수였지./n
+하지만 과연 고려의 부패한 세력을 지키는게 의미가 있었는지 모르겠군./n
+그래서 내가 새로운 나라를 건국하려하고 있는 걸지도 몰라...>, <Event_Node: 이성계_그 녀석들은 고려를 시도때도 없이 침략했었어./n
+정말이지 엄청난 수의 배를 끌고 마치 그게 연례행사라도 되는 듯이.../n
+백성들이 많이 고통 받았었지. /n
+하지만 고려의 부패한 관리들은 그 놈들을 막을 역량이 없어보였지.../n
+그나마 뜻 있고 능력있는 장수들이 있었어서 다행이었지/n
+정몽주도 그 때를 함께한 유능한 인재 중 하나였는데...>, <Event_Node: 이성계_홍건적 녀석들이 고려 땅을 자꾸 넘보길래 한번 혼쭐을 내준 적이 있었지./n
+그 때 내 활 쏨씨로 요동성까지 탈환하고 말야../n
+물론 그 성을 오래 지키는 건 다른 문제였지만 말이야/n
+하지만 홍건적 일부 녀석들이 명나라를 세우고 나서는 이야기가 완전히 달라졌었지./n
+그게 내가 위화도에서 큰 결정을 한 이유 중 하나이기도 했고 말이야...>, <Event_Node: 이성계_최영과 우왕은 정말 명나라를 쳐야만한다고 생각했었던 것 같았지./n
+하지만 내 생각은 달랐다./n
+명나라는 대국일 뿐만 아니라 당시의 계절 등도 우리에게는 불리한 정황이었지./n
+그래서 나는 요동으로 향하던 중 위화도에서 회군하여 최영을 제거하고 우왕을 폐하는 결단을 내렸다./n
+그리고 나는 나의 목적에 대해서 더 뚜렷하게 생각하게 되었지./n
+그 때만 해도 정몽주는 나를 도왔었는데... 어떤 것이 잘못된 것인지..>, <Event_Node: 이성계_흠.. 그 이야기는 아직 하고 싶지 않다네>, <Event_Node: 이성계_고려는 이제 더 이상 과거의 영광을 가지고 있지 않지./n
+백성들은 외세에 고통 받고 있는데 헛된 꿈이나 꾸고 있는 관리들이라니/n
+나는 고려보다 더 나은 나라를 세울 자신이 있다네./n
+비록 그 와중에 쳐내야할 것들이 뼈 아프긴 하지만...>]>[30/Nov/2017 07:53:47] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%2C1%2C6%2C7%2C4%5D HTTP/1.1" 200 8418
+[30/Nov/2017 07:54:15] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%2C1%2C6%2C7%2C4%2C5%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:54:16] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EC%84%B1%EA%B3%84&seen_events=%5B0%2C2%2C1%2C6%2C7%2C4%2C5%5D HTTP/1.1" 200 8418
+[30/Nov/2017 07:54:20] "GET /chatbot/retrieve_possible_questions?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C2%2C1%2C6%2C7%2C4%2C5%5D HTTP/1.1" 301 0
+[30/Nov/2017 07:54:20] "GET /chatbot/retrieve_possible_questions/?cur_char=%EC%9D%B4%EB%B0%A9%EC%9B%90&seen_events=%5B0%2C2%2C1%2C6%2C7%2C4%2C5%5D HTTP/1.1" 200 4668
+[30/Nov/2017 08:00:39] "GET /chatbot/ HTTP/1.1" 200 1957
+[30/Nov/2017 08:00:39] "GET /static/chatbot/chatbot.css HTTP/1.1" 304 0
+[30/Nov/2017 08:00:39] "GET /static/chatbot/chatbot.js HTTP/1.1" 304 0
+[30/Nov/2017 08:00:40] "GET /chatbot/curriculum_retrieval?cur_name=test1 HTTP/1.1" 200 2197
