@@ -5,6 +5,7 @@ urlpatterns = [
     url(r'^curriculum_retrieval', views.curriculum_retrieval, name='curriculum_retrieval'),
     url(r'^curriculum_save', views.curriculum_save, name='curriculum_save'),
     url(r'^curriculum/$', views.curriculum, name='curriculum'),
+    url(r'^retrieve_possible_questions/$', views.retrieve_possible_questions, name='retrieve_possible_questions'),
     url(r'^retrieve_timeline/$', views.retrieve_timeline, name='retrieve_timeline'),
     url(r'^get_all_figures/$', views.get_all_figures, name='get_all_figures'),
     url(r'^fig_who/$', views.fig_who, name='fig_who'),

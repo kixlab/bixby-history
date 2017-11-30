@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.db.models import Q
+from django.db.models import Q, Count
 from .models import Event_Node, Question_Link, Figure, Event_Tag, Curriculum, Curriculum_Element, Prompt_Condition
 import json
 from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
@@ -34,55 +34,62 @@ def curriculum_save(request):
 
 def curriculum_retrieval(request):
     cur_name = request.GET.get('cur_name')
-    print(cur_name)
-    curriculum = Curriculum.objects.get(Curriculum_Name = cur_name)
-    init_ev_id = curriculum.Curriculum_Seed_Node.Event_Id
-    cur_eles = curriculum.curriculum_element_set.all();
-    events_can_be_seen = []
-    dependent_events = []
-    prompt_conditions = []
-    answer_ev_id = -1
-    for cur_ele in cur_eles:
-        if cur_ele.Dependencies.all().count()!=0:
-            if cur_ele.Event_Node.Event_Id == init_ev_id:
-                answer_ev_id = cur_ele.Dependencies.all()[0].Event_Id
-            else:
-                dependent ={}
-                dependent['Event_Id'] = cur_ele.Event_Node.Event_Id
-                dependent['Dependent'] = []
-                deps = cur_ele.Dependencies.all()
-                for dep in deps:
-                    dependent['Dependent'].append(dep.Event_Id)
-                dependent_events.append(dependent)
-        events_can_be_seen.append(cur_ele.Event_Node.Event_Id)
+    cur = Curriculum.objects.get(Curriculum_Name = cur_name)
+    print(cur.Subject_Figure)
 
-    prompt_condition_queries = Prompt_Condition.objects.filter(Curriculum = curriculum)
-    for prompt_condition_query in prompt_condition_queries:
-        prompt_condition = {}
-        prompt_condition['include']=[]
-        prompt_condition['exclude']=[]
-        ins = prompt_condition_query.Include_Conditions.all()
-        exs = prompt_condition_query.Exclude_Conditions.all()
-        for include_condition in ins:
-            prompt_condition['include'].append(include_condition.Event_Id)
-        for exclude_condition in exs:
-            prompt_condition['exclude'].append(exclude_condition.Event_Id)
-        prompt_condition['question']=prompt_condition_query.Question
-        prompt_condition['question_type'] = prompt_condition_query.Question_Type
-        if prompt_condition_query.Final_Reach_Node is not None:
-            prompt_condition['trigger'] = prompt_condition_query.Final_Reach_Node.Event_Id
-        else :
-            prompt_condition['trigger'] = None
-        prompt_condition['answer'] = prompt_condition_query.Answer
-        prompt_conditions.append(prompt_condition)
-    #events_can_be_seen.append(init_ev_id)
-    print(prompt_conditions)
+    figures = Figure.objects.all()
+    tot_fs = []
+    fs = []
+    for figure in figures:
+        if figure.Figure_Name != cur.Subject_Figure.Figure_Name:
+            tot_fs.append(figure.Figure_Name)
+        if (figure.Figure_Name in cur.Curriculum_Background) and (figure.Figure_Name != cur.Subject_Figure.Figure_Name):
+            fs.append(figure.Figure_Name)
+
+    print(fs)
     data = {
-        'init_ev_id': init_ev_id,
-        'answer_ev_id': answer_ev_id,
-        'dependent_events': json.dumps(dependent_events),
-        'events_can_be_seen': json.dumps(events_can_be_seen),
-        'prompt_conditions': json.dumps(prompt_conditions),
+        'answer_id': cur.Curriculum_Seed_Node.Event_Id,
+        'init_text': cur.Curriculum_Background,
+        'figure_list': json.dumps(fs),
+        'all_figure_list': json.dumps(tot_fs),
+        }
+    return JsonResponse(data)
+
+def retrieve_possible_questions(request):
+    cur_char = request.GET.get("cur_char")
+    figure = Figure.objects.get(Figure_Name = cur_char)
+    print(figure)
+    seen_events = json.loads(request.GET.get("seen_events"))
+    seen_events_obj = Event_Node.objects.filter(Event_Id__in=seen_events).all().distinct()
+    not_seen_events_obj = Event_Node.objects.exclude(Event_Id__in=seen_events).all().distinct()
+    print(len(seen_events_obj))
+    print(len(not_seen_events_obj))
+    if len(seen_events_obj) == 0:
+        possible_events = Event_Node.objects.annotate(pre_num = Count('Prerequisite_Event')).filter(Figures = figure, pre_num = 0)
+    else:
+        possible_events = Event_Node.objects.annotate(pre_num = Count('Prerequisite_Event')).filter(Figures = figure).filter((Q(Prerequisite_Event__in = seen_events_obj)&~Q(Prerequisite_Event__in = not_seen_events_obj))|Q(pre_num=0)).distinct()
+    print(possible_events)
+    ps_evs=[]
+    for possible_event in possible_events:
+        ev = {}
+        ev['event_happen']=possible_event.Event_Happen
+        ev['event_question']=possible_event.Event_Question.Link_Question
+        ev['event_id']=possible_event.Event_Id
+        if len(seen_events_obj)==0:
+            if len(possible_event.final_reach_node.all()):
+                prompt_condi = possible_event.final_reach_node.all()[0]
+                ev['prompt1'] = prompt_condi.Question
+                ev['prompt2'] = prompt_condi.Answer
+        else:
+            prompt_condi_candis = possible_event.final_reach_node.annotate(inc_num = Count('Include_Conditions'), exc_num = Count('Exclude_Conditions')).filter(((Q(Include_Conditions__in=seen_events_obj)&~Q(Include_Conditions__in=not_seen_events_obj))|Q(inc_num=0))&((~Q(Exclude_Conditions__in=seen_events_obj))|Q(exc_num=0)))
+            if len(prompt_condi_candis)!=0:
+                prompt_condi = prompt_condi_candis[0]
+                ev['prompt1'] = prompt_condi.Question
+                ev['prompt2'] = prompt_condi.Answer
+        ps_evs.append(ev)
+
+    data={
+        'possible_events': json.dumps(ps_evs),
     }
     return JsonResponse(data)
 

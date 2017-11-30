@@ -7,13 +7,13 @@ html{
   width: 100%;
 }
 body{
-  height: 95%;
+  height: 100%;
   width: 100%;
   margin: 0;
 }
 #container{
+
   height: 90%;
-  width: 90%;
   padding: 5%;
 }
 #chat_display{
@@ -36,12 +36,22 @@ body{
   border-bottom-right-radius: 10px;
 }
 #chat_display_container{
-  overflow-y: scroll;
+  height: 100%;
 }
 .large_container{
   padding: 10px;
 }
-
+#chat_above{
+  border-bottom: solid 1px black;
+  height: 30%;
+}
+#chat_mid{
+  border-bottom: solid 1px black;
+}
+#chat_below{
+  height: 90%;
+  overflow-y: scroll;
+}
 #chat_input_selector_margin{
   width: 69%;
   padding-left: 1%;
@@ -91,6 +101,18 @@ body{
   border-radius: 5px;
   padding: 5px;
 }
+.chatbot_instruction{
+  background-color: #f45529;
+  color: white;
+  font-family: 'Nanum Gothic',  sans-serif;
+  margin-bottom: 10px;
+  width: 80%;
+  word-wrap: break-word;
+  word-break: break-all;
+  float : left;
+  border-radius: 5px;
+  padding: 5px;
+}
 .user_input{
   font-family: 'Nanum Gothic',  sans-serif;
   margin-bottom: 10px;
@@ -101,4 +123,14 @@ body{
   float : right;
   border-radius: 5px;
   padding: 5px;
+}
+.char_button{
+  margin: 5px;
+}
+.helper_name{
+  float: left;
+  width: 80%;
+}
+.question_btn{
+  margin: 2px;
 }

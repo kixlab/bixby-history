@@ -6,8 +6,12 @@
 <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
 <script src="https://d3js.org/d3-selection.v1.min.js"></script>
 <script src="https://d3js.org/d3-drag.v1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <script type="text/javascript" src="{% static 'chatbot/chatbot.js' %}" /></script>
@@ -18,8 +22,14 @@
 <body>
   <div id="container">
   <div id="chat_display">
-    <div id="chat_display_container" class="large_container">
-      <div class="chatbot_output">사건이 들어왔어요. 다음 사건이 왜 일어났는지 찾아달래요. 저에게 인물 혹은 사건 위주로 여쭤보시면 최대한 관련된 정보를 찾아볼게요!</div>
+    <div id="chat_display_container">
+      <!--<div id="chat_above" class="large_container"></div>-->
+      <div id="chat_mid" class="large_container">
+      </div>
+      <div id="chat_below" class="large_container">
+        <button id="progress_indicator" class="container btn btn-large btn-success" style="float : left; display: block">
+        </button>
+      </div>
     </div>
   </div>
   <div id="chat_input">

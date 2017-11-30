@@ -1,42 +1,19 @@
-var curriculum_name = "test2";
-var init_ev_id; //22;
-var cur_ev_id = init_ev_id;
-var answer_ev_id;// = 21;
-var related_id;
-var init_ev_output="";
-var related_exist = false;
-var initialized=false;
-var answer_found = false;
-var last_info="";
-//figures and event_tags that are seen to current stage
-var figure_list=[];
-var event_tag_list=[];
-//dealt event id
-var dealt_event_id_list=[];
-//figure list and event tag of currently explained event
-var cur_figure_list;
-var cur_event_tag="";
-//question infos that user can choose
-var figure_who_question=[]
-var figure_next_question=[]
-//events that can be seen
-var events_can_be_seen=[]
-//events that cannot be seen initially
-var dependent_events=[]
-//whether to or not to give feedback about user's input
-var give_neg_feedback = false;
-var related_utterances = [
-  "관련 높아 보이는 정보를 찾은 것 같은데요?",
-  "이 정보 조금 중요할 수도 있겠는데요?",
-]
+
 //make users answer the prompt
 var prompt_conditions;
 var prompt_queue;
 var prompt_ids;
 var do_prompting = false;
 var cur_prompting;
-
+var chat_count=0;
 var output_queue=[];
+var cur_char, cur_char_id;
+var seen_events=[];
+var question_events;
+var total_figure_list;
+var on_figure_button = null;
+var cur_indx;
+var final_node;
 $(document).ready(function(){
   initialize();
   elements_fit_size();
@@ -55,13 +32,33 @@ initialize = function(){
     },
     dataType: 'json',
     success : function(data){
-      events_can_be_seen = JSON.parse(data.events_can_be_seen)
-      dependent_events = JSON.parse(data.dependent_events)
-      prompt_conditions = JSON.parse(data.prompt_conditions)
-      init_ev_id = data.init_ev_id
-      cur_ev_id = init_ev_id
-      answer_ev_id = data.answer_ev_id
-      retrieve_output(init_ev_id);
+      total_figure_list = JSON.parse(data.all_figure_list)
+      console.log(total_figure_list)
+      figure_list = JSON.parse(data.figure_list)
+      console.log(figure_list)
+      for(var i=0; i<total_figure_list.length; i++){
+
+        $("#chat_mid").append("<button id='figure_"+i.toString()+"' class='char_button btn btn-primary disabled' val='"+total_figure_list[i]+"'>"+total_figure_list[i]+"</button>")
+        $("#figure_"+i.toString()).css("pointer-events", "none").on("click", function(){
+          retrieve_possible_questions(this);
+
+        })
+        if(!data.init_text.includes(total_figure_list[i])){
+          $("#figure_"+i.toString()).css("display", "none");
+        }
+      }
+      init_text = data.init_text.split("/n")
+      final_node = data.answer_id;
+      console.log(init_text)
+      //$("#chat_below").append("<div class='chatbot_output'>"+init_text+"</div>")
+      for(var i=0; i<init_text.length; i++){
+        if(init_text[i].length>0){
+          output_queue.push([init_text[i], "chatbot_output"])
+        }
+      }
+      output_queue.push(["위의 인물 중 한 명을 선택하여 질문을 던져서 정보를 습득하세요", "chatbot_instruction"])
+      clear_output_queue();
+      //retrieve_output(init_ev_id);
 
 //      console.log(events_can_be_seen)
 //      console.log(dependent_events)
@@ -73,7 +70,96 @@ initialize = function(){
   })
 
 }
+retrieve_possible_questions = function(t){
+  //add char_button
+  if(on_figure_button != null){
+    console.log(on_figure_button)
+    $("#figure_"+on_figure_button.toString()).css("display","")
+    alert("이제 "+$("#figure_"+on_figure_button.toString()).attr("val")+"에게도 질문을 할 수 있습니다!")
+    on_figure_button = null;
 
+  }
+  if(cur_char != $(t).attr("val")){
+    cur_char = $(t).attr("val");
+    cur_char_id = $(t).attr("id");
+    $('.char_button').off('click').on('click', function(){
+      if(this!=t){
+        retrieve_possible_questions(this);
+      }
+    }).text(function(){
+      return $(this).attr("val")
+    })
+    $(t).text($(t).attr("val")+"(와)과 대화 중 입니다.").off("click")
+    $("<div class='container char_begin' style='display:block; float: left; opacity: 0'>"+cur_char+"와(과) 대화를 시작합니다.</div>").insertBefore("#progress_indicator")
+    .animate({
+      opacity: 1
+    }, 500, function(){
+      retrieve_q_from_server();
+    })
+    attention_to_bottom()
+  }else{
+    retrieve_q_from_server();
+  }
+  $("#chat_input_selector").empty();
+
+
+}
+
+retrieve_q_from_server=function(){
+  $.ajax({
+    url: '/chatbot/retrieve_possible_questions',
+    data:{
+      'cur_char': cur_char,
+      'seen_events': JSON.stringify(seen_events),
+    },
+    dataType: 'json',
+    success : function(data){
+      question_events = JSON.parse(data.possible_events);
+      console.log(question_events)
+      for(var i=0; i<question_events.length; i++){
+        $("<button class='btn btn-large btn-info question_btn activated' val='"+i.toString()+"' style='float: left; opacity: 0'>"+question_events[i]['event_question']+"</button>")
+        .appendTo("#chat_input_selector")
+        .animate({opacity:1},{
+          duration: 500,
+          start: function(){
+            if(seen_events.includes(question_events[i]['event_id'])){
+              $(this).removeClass("btn-info").addClass("btn-light").css("color", "#dddddd")
+            }
+          },
+          done : function(){
+            $(this).on('click', function(){
+              $(this).off('click')
+              $(this).animate({opacity:0}, 500, function(){
+                $(this).remove()
+              })
+              cur_indx = parseInt($(this).attr('val'));
+              var ev_hp = question_events[cur_indx]['event_happen'].split("/n")
+              var ids = []
+              for (var j=0; j<total_figure_list.length; j++){
+                if(question_events[cur_indx]['event_happen'].includes(total_figure_list[j])&&$("#figure_"+j.toString()).css("display")=="none"){
+                  //$("#figure_"+j.toString()).css("display","")
+                  on_figure_button = j;
+                  console.log(on_figure_button)
+                  //$("#chat_mid").append("<button id='figure_"+i.toString()+"' class='char_button btn btn-primary disabled' val='"+figure_list[i]+"'>"+figure_list[i]+"</button>")
+                }
+              }
+              output_queue.push([question_events[cur_indx]['event_question'], "user_input"])
+              for(var j=0; j<ev_hp.length; j++){
+                output_queue.push([ev_hp[j],"chatbot_output"])
+              }
+              seen_events.push(question_events[cur_indx]['event_id'])
+              clear_output_queue();
+            })
+          }
+        })
+
+      }
+    },
+    error: function(data){
+
+    }
+  })
+}
 
 retrieve_output = function(id, dooutput=true){
   var was_related = related_exist;
@@ -91,7 +177,6 @@ retrieve_output = function(id, dooutput=true){
       var recurrence = dealt_event_id_list.includes(id)
       if(dealt_event_id_list.includes(id)){
         output_queue.push("<div class='chatbot_output'>이미 한 번 설명해 드린 것 같지만요.</div>");
-        //$("#chat_display_container").append("<div class='chatbot_output'>이미 한 번 설명해 드린 것 같지만요.</div>")
       }else{
         dealt_event_id_list.push(id);
       }
@@ -209,112 +294,145 @@ retrieve_output = function(id, dooutput=true){
 }
 
 do_prompt = function(not_end=true){
-  if(not_end){
-    cur_prompting =prompt_queue.pop()
-    //append chatbot output
-    output_queue.push("<div class='chatbot_output'>"+cur_prompting['question']+"</div>")
-  }
-  clear_output_queue();
-  //$("#chat_display_container").append("<div class='chatbot_output'>"+cur_prompting['question']+"</div>")
-  //clear input, leave text area
-  $("#chat_input_selector").empty();
-  $("#chat_input_selector").append("<textarea id='prompt_input'></textarea>")
-  $("#prompt_input").focus().outerHeight($("#chat_input_selector").height()).outerWidth($("#chat_input_selector").width())
-  $("#prompt_input").off("keydown").on('keydown', function(){
-    if(event.keyCode==13){
-      $(this).off('keydown')
+
+  $("#return").css("pointer-events", "auto");
+
+  $("#progress_indicator").before("<div class='helper_name'>TA</div>").before("<div class='chatbot_instruction' id='below_"+chat_count.toString()+"'>"+question_events[cur_indx]['prompt1']+"</div>")
+  $("#below_"+chat_count.toString()).css("opacity","0").animate({opacity:1}, 500, function(){
+    chat_count++;
+    $("#chat_input_selector").empty();
+    $("#chat_input_selector").append("<textarea id='prompt_input'></textarea>")
+    $("#chat_input_selector").css("visibility", "visible").css("pointer-events", "auto");
+    $("#prompt_input").focus().outerHeight($("#chat_input_selector").height()).outerWidth($("#chat_input_selector").width())
+    $("#prompt_input").off("keydown").on('keydown', function(){
+      if(event.keyCode==13){
+        $(this).off('keydown')
+        if(not_end){
+          do_prompt_second();
+        }else{
+          do_prompt_third(not_end);
+        }
+      }
+    })
+    $("#return").css("visibility", "visible").on("click", function(){
+      $(this).off('click')
       if(not_end){
         do_prompt_second();
       }else{
         do_prompt_third(not_end);
       }
-    }
+    })
   })
-  $("#return").css("visibility", "visible").on("click", function(){
-    $(this).off('click')
-    if(not_end){
-      do_prompt_second();
-    }else{
-      do_prompt_third(not_end);
-    }
-  })
+  //$("#chat_display_container").append("<div class='chatbot_output'>"+cur_prompting['question']+"</div>")
+  //clear input, leave text area
+
 
 }
 
 do_prompt_second = function(){
   //output
-  $("#chat_display_container").append("<div class='user_input'>"+$("#prompt_input").val()+"</div>")
-  //$("#prompt_input");
-  output_queue.push("<div class='chatbot_output'>"+cur_prompting['answer']+"</div>")
-  //$("#chat_display_container").append("<div class='chatbot_output'>"+cur_prompting['answer']+"</div>")
-  output_queue.push("<div class='chatbot_output'>저와 당신의 생각이 비슷한 것 같나요 아니면 많이 다른 것 같나요?</div>")
-  //$("#chat_display_container").append("<div class='chatbot_output'>저와 당신의 생각이 비슷한 것 같나요 아니면 많이 다른 것 같나요?</div>")
+  var u_input = $("#prompt_input").val()
+  $("#prompt_input").val('').empty().focus()
+  $("#return").off("click")
+  $("#prompt_input").off("click")
+  $("#progress_indicator").before("<div class='user_input' id='below_"+chat_count.toString()+"' val='"+u_input+"'' style='opacity: 0'>sending your input...</div>")
   attention_to_bottom();
-  clear_output_queue();
-  //see the queue
-  $("#prompt_input").val('').focus().off("keydown").on('keydown', function(event){
-    if(event.keyCode==13){
-      $(this).off('keydown')
-      do_prompt_third();
-    }
+  $("#below_"+chat_count.toString()).animate({opacity:1},500,function(){
+    chat_count = chat_count+1;
+    $(this).text(u_input)
+    $("#progress_indicator").before("<div class='helper_name'>TA</div>").before("<div class='chatbot_instruction' id='below_"+chat_count.toString()+"' style='opacity:0'>chatbot is typing...</div>")
+    attention_to_bottom();
+    $("#below_"+chat_count.toString()).animate({opacity:1}, 500, function(){
+      chat_count = chat_count+1;
+      $(this).text(question_events[cur_indx]['prompt2'])
+      $("#prompt_input").off("keydown").on('keydown', function(event){
+      if(event.keyCode==13){
+        $(this).off('keydown')
+        $("#return").off("click")
+        do_prompt_third();
+      }
+      })
+      $("#return").off("click").on("click", function(){
+        $("#prompt_input").off("click")
+        $(this).off('click')
+        do_prompt_third();
+      })
+
+    })
+
   })
-  $("#return").off("click").on("click", function(){
-    $(this).off('click')
-    do_prompt_third();
-  })
+
+  //$("#prompt_input");
+
+
+
 
 }
 
 do_prompt_third = function(not_end=true){
 
-  $("#chat_display_container").append("<div class='user_input'>"+$("#prompt_input").val()+"</div>")
-
-  output_queue.push("<div class='chatbot_output'>왜 그렇게 생각하세요? 혹시 그렇게 생각하는 뚜렷한 증거가 있나요?</div>")
-  clear_output_queue()
-  //$("#chat_display_container").append("<div class='chatbot_output'>왜 그렇게 생각하세요? 혹시 그렇게 생각하는 뚜렷한 증거가 있나요?</div>")
+  var u_input = $("#prompt_input").val()
+  $("#prompt_input").val('').focus()
+  $("#return").off("click")
+  $("#prompt_input").off("click")
+  $("#progress_indicator").before("<div class='user_input' id='below_"+chat_count.toString()+"' val='"+u_input+"'' style='opacity: 0'>sending your input...</div>")
   attention_to_bottom();
-  $("#prompt_input").val('').focus().off("keydown").on('keydown', function(event){
-    if(event.keyCode==13){
-    $(this).off('keydown')
-    do_prompt_fourth(not_end);
-  }
-  })
-  $("#return").off("click").on("click", function(){
-    $(this).off('click')
-    do_prompt_fourth(not_end);
+  $("#below_"+chat_count.toString()).animate({opacity:1},500,function(){
+    chat_count = chat_count+1;
+    $(this).text(u_input)
+    $("#progress_indicator").before("<div class='helper_name'>TA</div>").before("<div class='chatbot_instruction' id='below_"+chat_count.toString()+"' style='opacity:0'>chatbot is typing...</div>")
+    attention_to_bottom();
+    $("#below_"+chat_count.toString()).animate({opacity:1}, 500, function(){
+      chat_count = chat_count+1;
+      $(this).text("왜 그렇게 생각하세요? 그렇게 생각하는 논리적 증거나 그렇게 생각하게 한 정황 같은 것이 있나요?")
+      $("#prompt_input").off("keydown").on('keydown', function(event){
+      if(event.keyCode==13){
+        $(this).off('keydown')
+        $("#return").off("click")
+        do_prompt_fourth();
+      }
+      })
+      $("#return").off("click").on("click", function(){
+        $("#prompt_input").off("click")
+        $(this).off('click')
+        do_prompt_fourth();
+      })
+
+    })
+
   })
 }
 
 do_prompt_fourth = function(not_end = true){
-  $("#chat_display_container").append("<div class='user_input'>"+$("#prompt_input").val()+"</div>")
-  output_queue.push("<div class='chatbot_output'>생각을 이야기해줘서 고마워요. 다른 사람은 어떻게 생각하는지 궁금했어요.</div>")
-  //$("#chat_display_container").append("<div class='chatbot_output'>생각을 이야기해줘서 고마워요. 다른 사람은 어떻게 생각하는지 궁금했어요.</div>")
+  var u_input = $("#prompt_input").val()
+  $("#prompt_input").val('').focus()
+  $("#return").off("click")
+  $("#prompt_input").off("click")
+  $("#progress_indicator").before("<div class='user_input' id='below_"+chat_count.toString()+"' val='"+u_input+"'' style='opacity: 0'>sending your input...</div>")
+  attention_to_bottom();
+  $("#below_"+chat_count.toString()).animate({opacity:1},500,function(){
+    chat_count = chat_count+1;
+    $(this).text(u_input)
+    $("#progress_indicator").before("<div class='helper_name'>TA</div>").before("<div class='chatbot_instruction' id='below_"+chat_count.toString()+"' style='opacity:0'>chatbot is typing...</div>")
+    attention_to_bottom();
+    $("#below_"+chat_count.toString()).animate({opacity:1}, 500, function(){
+      chat_count = chat_count+1;
+      if(final_node != question_events[cur_indx]['event_id']){
+        $(this).text("생각을 이야기해줘서 고마워요. 이제 다시 "+cur_char+"과(와) 이야기 해 봅시다.")
+        $("#chat_input_selector").css("visibility", "visible").css("pointer-events", "auto");
+        $("#return").css("pointer-events", "auto");
+        $(".char_button").removeClass("disabled").addClass("activated").css("pointer-events", "auto");
+        retrieve_possible_questions("#"+cur_char_id)
+      }else{
+        $(this).text("그렇게 생각하시는군요. 어쨌든 직접적인 이유를 찾은 것 같군요! 이 사건과 사건이 일어난 배경에 대해서 잘 파악이 되셨으면 좋겠어요. 그리고 여기서 재현된 대화 또한 사건들에 대한 하나의 해석이라는 사실을 꼭 명심하세요!")
+        
+      }
 
-  if(prompt_queue.length>0){
-    output_queue.push("<div class='chatbot_output'>음, 근데 이야기하고 싶은게 하나 더 있어요</div>")
-    //$("#chat_display_container").append("<div class='chatbot_output'>음, 근데 이야기하고 싶은게 하나 더 있어요</div>")
-    attention_to_bottom();
-    do_prompt();
-  }else if(not_end){
-    output_queue.push("<div class='chatbot_output'>그럼 궁금한 것이 있으시면 또 물어보세요! 마지막으로 다음과 관련된 이야기를 하고 있었네요.</div>")
-    output_queue.push("<div class='chatbot_output info' value="+cur_ev_id.toString()+">"+last_info+"</div>");
-    clear_output_queue();
-    //$("#chat_display_container").append("<div class='chatbot_output'>그럼 궁금한 것이 있으시면 또 물어보세요!</div>")
-    attention_to_bottom();
-    //retrieve_output(cur_ev_id);
-    generate_question_infos(related_exist);
-  }else{
-    //prompt_condition=[]
-    output_queue.push("<div class='chatbot_output'>답을 찾느라 수고했어요!</div>")
-    output_queue.push("<div class='chatbot_output'>혹시 궁금한 점이 아직 남아서 더 관련 정보를 찾고 싶으면 더 물어보세요!</div>")
-    output_queue.push("<div class='chatbot_output'>마지막으로는 다음과 같은 이야기를 하고 있었어요</div>")
-    output_queue.push("<div class='chatbot_output info' value="+cur_ev_id.toString()+">"+last_info+"</div>");
-    clear_output_queue();
-    attention_to_bottom();
-    generate_question_infos(related_exist);
-    //$("#chat_input_selector_margin").css("visibility", "hidden")
-    //$("#return").css("visibility", "hidden")
-  }
+
+    })
+
+  })
+
 }
 
 seems_related = function(recurrence, was_related){
@@ -353,90 +471,10 @@ dependency_update = function(){
   console.log(dependent_events)
 }
 
-generate_question_infos = function(related_exist){
-  $("#chat_input_selector").empty();
-  $("#return").css('visibility', 'hidden');
-  //who question - can be retrieved from all figures have been seen til now
-  figure_who_question=[];
-  for(var i=0; i<figure_list.length; i++){
-    figure_who_question.push(figure_list[i]);
-    $("#chat_input_selector").append("<div class='fig_who chat_input_button' value="+i.toString()+">"+figure_list[i]+"은(는) 무엇을 한 사람인가요?</div>")
-  }
-  //who next question - multiple - about figures in the current figure list
-  figure_next_question=[]
-  figure_next_question = get_comb(cur_figure_list);
-  for(var i=0; i<figure_next_question.length; i++){
-    var input="";
-    if(figure_next_question[i].length==1){
-      input = figure_next_question[i][0]+"은(는) 이후에 또 무엇을 하였나요?"
-    }else{
-      for(var j=0; j<figure_next_question[i].length; j++){
-        input = input + figure_next_question[i][j];
-        if(j!=figure_next_question[i].length-1){
-          input = input+"와(과) ";
-        }
-      }
-      input = input + "은(는) 이후에 또 무엇을 함께 같이 했나요?"
-    }
-    $("#chat_input_selector").append("<div class='fig_next chat_input_button' value="+i.toString()+">"+input+"</div>")
-
-  }
-  //event 사건
-  for(var i=0; i<event_tag_list.length; i++){
-    $("#chat_input_selector").append("<div class='ev_what chat_input_button' value="+i.toString()+">"+event_tag_list[i]+"은(는) 무슨 사건인가요?</div>")
-  }
-  $("#chat_input_selector").append("<div class='ev_next chat_input_button'>말한 것 다음에는 어떤 일이 일어났죠?</div>")
-  //관련된 / 다른 사건에 대해 알아보자
-  if(related_exist){
-  $("#chat_input_selector").append("<div class='related_ev chat_input_button'>그 관련된 사건이 뭔지 알 수 있을까요?</div>")
-  }
-  $("#chat_input_selector").append("<div class='other_ev chat_input_button'>(다른 사건을 중심으로 질문하기)</div>")
-  console.log(figure_next_question);
-
-  $(".chat_input_button").on("mouseover", function(){
-    $(this).css('background-color', "#cccccc")
-  }).on("mouseout", function(){
-    $(this).css("background-color", "transparent")
-  }).on("click", function(){
-    var input = $(this).text();
-    if(!$(this).attr("class").includes("other_ev")){
-      $("#chat_display_container").append("<div class='user_input'>"+input+"</div>")
-  }else{
-      $("#chat_display_container").append("<div class='user_input'>말하고 있는 거 말고 전에 말했던 것 중에 더 이야기해보고 싶은게 있는데...(조수가 가져온 사건 기록 중 하나를 고르세요)</div>")
-  }
-    console.log($(this).attr("class"))
-    if($(this).attr("class").includes("fig_who")){
-      fig_who(parseInt($(this).attr('value')))
-    }else if($(this).attr("class").includes("fig_next")){
-      fig_next(parseInt($(this).attr('value')))
-    }else if($(this).attr("class").includes("ev_what")){
-      ev_what(parseInt($(this).attr('value')))
-    }else if($(this).attr("class").includes("ev_next")){
-      ev_next()
-    }else if ($(this).attr("class").includes("other_ev")){
-      $("#chat_input_selector").empty();
-      $(".info").on("mouseover", function(){
-        $(this).css("background-color", "black").css("color", "white")
-      }).on("mouseout", function(){
-        $(this).css("background-color", "#cccccc").css("color", "black")
-      }).on("click", function(){
-          cur_ev_id = parseInt($(this).attr("value"));
-          retrieve_output(parseInt($(this).attr("value")), false)
-          $(".info").off("click").off("mouseover").off("mouseout")
-          .css("background-color", "#cccccc").css("color", "black")
-      })
-
-    }else if($(this).attr("class").includes("related_ev")){
-      retrieve_output(related_id);
-    }
-
-    attention_to_bottom();
-})
-
-}
 attention_to_bottom = function(){
-  $('#chat_display_container').stop().animate({
-    scrollTop: $('#chat_display_container')[0].scrollHeight
+  console.log($("#chat_below").scrollHeight)
+  $('#chat_below').stop().animate({
+    scrollTop: $('#chat_below').prop('scrollHeight')
   }, 800);
 
 }
@@ -584,32 +622,93 @@ get_comb = function(figure_list){
   return result;
 }
 clear_output_queue=function(){
-
   if(output_queue.length>0){
+    $(".char_button").css("pointer-events", "none").removeClass("activated").addClass("disabled");
+    $("#progress_indicator").css("opacity", "1").text("Next")
     $("#chat_input_selector").css("visibility", "hidden").css("pointer-events", "none");
-    $("#return").css("pointer-events", "none");
     var output = output_queue.shift()
     var text;
-    $(output).appendTo("#chat_display_container").css('opacity', function(){
+    $("#return").css("pointer-events", "none");
+    if(cur_char != null && output[1]!='user_input'){
+      $("#progress_indicator").before("<div style='width: 80%; float: left'>"+cur_char+"</div>")
+
+    }else if(output[1]=="chatbot_instruction"){
+      $("#progress_indicator").before("<div style='width: 80%; float: left'>TA</div>")
+    }
+    $("#progress_indicator").before("<div class='"+output[1]+"' id='below_"+chat_count.toString()+"'>"+output[0]+"</div>")
+    $("#below_"+chat_count.toString()).css('opacity', function(){
       text = $(this).text()
+      if(output[1]!='user_input'){
       $(this).text("chatbot is typing...")
+    }else{
+      $(this).text("sending your input...")
+    }
       return 0;
     }).animate({
       opacity: 1,
     }, 1000, function(){
       $(this).text(text)
       attention_to_bottom();
-      clear_output_queue()
+      /*$("body").off("keydown").on('keydown', function(){
+        if(event.keyCode==13){
+          $(this).off("click")
+          $("body").off("keydown")
+          chat_count = chat_count+1;
+          clear_output_queue()
+        }
+      })*/
+      if(output_queue.length !=0){
+      $("#progress_indicator").off("click").on("click", function(){
+          $(this).off("click")
+          $("body").off("keydown")
+          chat_count = chat_count+1;
+          clear_output_queue()
+
+      })}else{
+        chat_count = chat_count+1;
+
+        $("#progress_indicator").off("click").animate({
+          opacity: 0,
+        }, 500)
+        console.log(question_events)
+        if(question_events == null){
+          $("#chat_input_selector").css("visibility", "visible").css("pointer-events", "auto");
+          $("#return").css("pointer-events", "auto");
+          $(".char_button").removeClass("disabled").addClass("activated").css("pointer-events", "auto");
+        }else if(("prompt1" in question_events[cur_indx])&&(count_list(seen_events, question_events[cur_indx]['event_id'])==1)){
+          do_prompt();
+          return;
+        }else {
+          $("#chat_input_selector").css("visibility", "visible").css("pointer-events", "auto");
+          $("#return").css("pointer-events", "auto");
+          $(".char_button").removeClass("disabled").addClass("activated").css("pointer-events", "auto");
+        }
+        if(cur_char_id!=null){
+          retrieve_possible_questions("#"+cur_char_id);
+        }
+      }
     })
   }else{
-    $("#chat_input_selector").css("visibility", "visible").css("pointer-events", "auto");
-    $("#return").css("pointer-events", "auto");
+    //$("#chat_input_selector").css("visibility", "visible").css("pointer-events", "auto");
+    //$("#return").css("pointer-events", "auto");
+
+    $("#progress_indicator").css("display", "none")
   }
 }
-
+count_list = function(list, element){
+  var count=0;
+  for(var k=0; k<list.length; k++){
+    if(list[k]==element){
+      count++;
+    }
+  }
+  return count;
+}
 elements_fit_size = function(){
   var chatbot_input_height = $("#chat_input").height();
   var chatbot_display_height = $("#chat_display").height();
   $("#chat_input_container").height(chatbot_input_height-20);
-  $("#chat_display_container").height(chatbot_display_height-20);
+  $("#chat_below").height((chatbot_display_height-40)*0.85);
+//  $("#chat_above").height((chatbot_display_height-60)*0.2);
+  $("#chat_mid").height((chatbot_display_height-40)*0.15)
 }
