@@ -35,9 +35,10 @@ class Event_Node(models.Model):
 
 class Curriculum(models.Model):
     Curriculum_Name = models.TextField(default="")
-    Subject_Figure = models.ForeignKey(Figure)
+    Subject_Figure = models.ForeignKey(Figure, blank=True, null=True)
     Curriculum_Background = models.TextField(default="")
     Curriculum_Seed_Node= models.ForeignKey(Event_Node, null=True, on_delete = models.SET_NULL)
+    final_remark = models.TextField(default = "")
     def __str__(self):
         return self.Curriculum_Name
 class Curriculum_Element(models.Model):

@@ -43,12 +43,13 @@ def curriculum_retrieval(request):
     fs = []
     for figure in figures:
         if figure.Figure_Name != cur.Subject_Figure.Figure_Name:
-            tot_fs.append({'name':figure.Figure_Name})
+            tot_fs.append({'name':figure.Figure_Name, 'id':figure.Figure_Id})
         if (figure.Figure_Name in cur.Curriculum_Background) and (figure.Figure_Name != cur.Subject_Figure.Figure_Name):
             fs.append(figure.Figure_Name)
 
     print(fs)
     data = {
+        'final_remark': cur.final_remark,
         'answer_id': cur.Curriculum_Seed_Node.Event_Id,
         'init_text': cur.Curriculum_Background,
         'figure_list': json.dumps(fs),

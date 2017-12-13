@@ -2,6 +2,11 @@
 .info{
   background-color: #cccccc;
 }
+.dunno{
+  float: right;
+  padding: 1px;
+  margin-right: 5px;
+}
 html{
   height: 100%;
   width: 100%;
@@ -13,7 +18,7 @@ body{
 }
 #container{
 
-  height: 90%;
+  height: 100%;
   padding: 5%;
 }
 #chat_display{
@@ -41,21 +46,28 @@ body{
 .large_container{
   padding: 10px;
 }
+.input_button{
+  white-space: normal !important;
+}
 #chat_above{
   border-bottom: solid 1px black;
   height: 30%;
 }
 #chat_mid{
+  overflow: scroll;
   border-bottom: solid 1px black;
 }
 #chat_below{
   height: 90%;
   overflow-y: scroll;
 }
+#chat_input_selector{
+  width: 100%;
+}
 #chat_input_selector_margin{
   width: 69%;
   padding-left: 1%;
-  height: 90%;
+  height: 100%;
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 5px;
@@ -63,13 +75,13 @@ body{
   border: solid 1px black;
   border-radius: 5px;
   overflow-y: scroll;
-
+  overflow-x: hidden;
 }
 
 #return{
   top:0;
   width: 28%;
-  height: 93%;
+  height: 100%;
   margin :0;
   padding: 0;
   float: right;
@@ -92,30 +104,34 @@ body{
 }
 .chatbot_output{
   font-family: 'Nanum Gothic',  sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  vertical-align: top;
   width: 80%;
   border: solid 1px black;
   word-wrap: break-word;
   word-break: break-all;
-  float : left;
+  display: inline-block;
   border-radius: 5px;
   padding: 5px;
 }
 .chatbot_instruction{
-  background-color: #f45529;
+  background-color: #cc2d02;
   color: white;
   font-family: 'Nanum Gothic',  sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  vertical-align: top;
   width: 80%;
+  display: inline-block;
   word-wrap: break-word;
   word-break: break-all;
-  float : left;
   border-radius: 5px;
   padding: 5px;
+
 }
 .user_input{
   font-family: 'Nanum Gothic',  sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  vertical-align: top;
   width: 80%;
   border: solid 1px black;
   word-wrap: break-word;
@@ -133,4 +149,14 @@ body{
 }
 .question_btn{
   margin: 2px;
+}
+.pic{
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border : solid 1px #eeeeee;
+  margin : 5px;
 }

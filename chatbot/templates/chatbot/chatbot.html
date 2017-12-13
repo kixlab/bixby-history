@@ -14,6 +14,10 @@
 
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script>
+  var img_route = '{% static "/img" %}'
+</script>
+<script type="text/javascript" src="{% static 'chatbot/josa.js' %}" /></script>
 <script type="text/javascript" src="{% static 'chatbot/chatbot.js' %}" /></script>
 
 
@@ -24,7 +28,7 @@
   <div id="chat_display">
     <div id="chat_display_container">
       <!--<div id="chat_above" class="large_container"></div>-->
-      <div id="chat_mid" class="large_container">
+      <div id="chat_mid" class="large_container" data-toggle='tooltip' title="인물 선택 창">
       </div>
       <div id="chat_below" class="large_container">
         <button id="progress_indicator" class="container btn btn-large btn-success" style="float : left; display: block">
