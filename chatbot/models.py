@@ -2,6 +2,10 @@ from django.db import models
 
 # Create your models here.
 
+class response(models.Model):
+    response = models.TextField(default="")
+    def __str__(self):
+        return self.response
 
 class Figure(models.Model):
     Figure_Id = models.IntegerField(default=0)

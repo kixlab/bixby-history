@@ -261,6 +261,7 @@ do_prompt_second = function(){
   //output
   $(".dunno").addClass('disabled').off('click')
   var u_input = $("#prompt_input").val()
+  return_response(question_events[cur_indx]['prompt1'].split('/q')[0]+"_"+u_input)
   $("#prompt_input").val('').empty().focus()
   $("#return").off("click")
   $("#prompt_input").off("click")
@@ -383,6 +384,7 @@ do_prompt_third = function(not_end=true){
 do_prompt_fourth = function(not_end = true){
   $(".dunno").off("click").addClass("disabled")
   var u_input = $("#prompt_input").val()
+  return_response(question_events[cur_indx]['prompt2'].split('/q')[0]+"_"+u_input)
   $("#prompt_input").val('').focus()
   $("#return").off("click")
   $("#prompt_input").off("click")
@@ -608,4 +610,21 @@ elements_fit_size = function(){
   $("#chat_below").height((chatbot_display_height-40)*0.85);
 //  $("#chat_above").height((chatbot_display_height-60)*0.2);
   $("#chat_mid").height((chatbot_display_height-40)*0.15)
+}
+
+return_response = function(response){
+  $.ajax({
+    url: '/chatbot/pile_response',
+    data:{
+      'response': response,
+
+    },
+    dataType: 'json',
+    success: function(){
+
+    },
+    error: function(){
+
+    }
+  })
 }

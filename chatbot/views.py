@@ -1,13 +1,21 @@
 #-*- coding: utf-8 -*-
 from django.shortcuts import render
 from django.db.models import Q, Count
-from .models import Event_Node, Question_Link, Figure, Event_Tag, Curriculum, Curriculum_Element, Prompt_Condition
+from .models import response,Event_Node, Question_Link, Figure, Event_Tag, Curriculum, Curriculum_Element, Prompt_Condition
 import json
 from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
 # Create your views here.
 def index(request):
     return render(request, 'chatbot/chatbot.html', {})
 
+def pile_response(request):
+    r = request.GET.get("response")
+    res = response(response = r)
+    res.save()
+    data={
+
+    }
+    return JsonResponse(data)
 def curriculum(request):
     return render(request, 'chatbot/curriculum.html', {})
 
