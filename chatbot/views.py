@@ -69,22 +69,27 @@ def retrieve_possible_questions(request):
     cur_char = request.GET.get("cur_char")
     figure = Figure.objects.get(Figure_Name = cur_char)
     print(figure)
+    seen_tags = json.loads(request.GET.get("seen_tags"))
     seen_events = json.loads(request.GET.get("seen_events"))
+    seen_tags_obj = Event_Tag.objects.filter(Event_Tag_Name__in=seen_tags).all().distinct()
+    not_seen_tags_obj = Event_Tag.objects.exclude(Event_Tag_Name__in=seen_tags).all().distinct()
+    if len(seen_tags_obj) == 0:
+        possible_events = Event_Node.objects.annotate(pre_num = Count('Prerequisite_Tag')).filter(Figures = figure, pre_num = 0)
+    else:
+        possible_events = Event_Node.objects.annotate(pre_num = Count('Prerequisite_Tag')).filter(Figures = figure).filter((Q(Prerequisite_Tag__in = seen_tags_obj)&~Q(Prerequisite_Tag__in = not_seen_tags_obj))|Q(pre_num=0)).distinct()
+
     seen_events_obj = Event_Node.objects.filter(Event_Id__in=seen_events).all().distinct()
     not_seen_events_obj = Event_Node.objects.exclude(Event_Id__in=seen_events).all().distinct()
-    print(len(seen_events_obj))
-    print(len(not_seen_events_obj))
-    if len(seen_events_obj) == 0:
-        possible_events = Event_Node.objects.annotate(pre_num = Count('Prerequisite_Event')).filter(Figures = figure, pre_num = 0)
-    else:
-        possible_events = Event_Node.objects.annotate(pre_num = Count('Prerequisite_Event')).filter(Figures = figure).filter((Q(Prerequisite_Event__in = seen_events_obj)&~Q(Prerequisite_Event__in = not_seen_events_obj))|Q(pre_num=0)).distinct()
-    print(possible_events)
+
     ps_evs=[]
     for possible_event in possible_events:
         ev = {}
         ev['event_happen']=possible_event.Event_Happen
         ev['event_question']=possible_event.Event_Question.Link_Question
         ev['event_id']=possible_event.Event_Id
+        ev['containing_tags'] = []
+        for tag in possible_event.Containing_Tag.all():
+            ev['containing_tags'].append(tag.Event_Tag_Name)
         if len(seen_events_obj)==0:
             if len(possible_event.final_reach_node.all()):
                 prompt_condi = possible_event.final_reach_node.all()[0]
@@ -98,10 +103,10 @@ def retrieve_possible_questions(request):
                 ev['prompt2'] = prompt_condi.Answer
         ps_evs.append(ev)
 
-    if len(seen_events_obj) == 0:
-        total_possible_events = Event_Node.objects.annotate(pre_num = Count('Prerequisite_Event')).filter(pre_num = 0)
+    if len(seen_tags_obj) == 0:
+        total_possible_events = Event_Node.objects.annotate(pre_num = Count('Prerequisite_Tag')).filter(pre_num = 0)
     else:
-        total_possible_events = Event_Node.objects.annotate(pre_num = Count('Prerequisite_Event')).filter((Q(Prerequisite_Event__in = seen_events_obj)&~Q(Prerequisite_Event__in = not_seen_events_obj))|Q(pre_num=0)).distinct()
+        total_possible_events = Event_Node.objects.annotate(pre_num = Count('Prerequisite_Tag')).filter((Q(Prerequisite_Tag__in = seen_tags_obj)&~Q(Prerequisite_Tag__in = not_seen_tags_obj))|Q(pre_num=0)).distinct()
     all_figures = Figure.objects.all()
     figure_count = {}
     for figure in all_figures:

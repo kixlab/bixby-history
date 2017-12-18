@@ -11,6 +11,7 @@ var output_queue=[];
 var cur_char, cur_char_id, cur_josa;
 var final_remark;
 var seen_events=[];
+var seen_tags = [];
 var question_events;
 var total_figure_list;
 var on_figure_button = [];
@@ -129,6 +130,7 @@ retrieve_q_from_server=function(){
     data:{
       'cur_char': cur_char,
       'seen_events': JSON.stringify(seen_events),
+      'seen_tags' :  JSON.stringify(seen_tags),
     },
     dataType: 'json',
     success : function(data){
@@ -197,6 +199,11 @@ retrieve_q_from_server=function(){
                 total_figure_list[cur_char_id_num]['answered_questions']++;
               }
               seen_events.push(question_events[cur_indx]['event_id'])
+              //seen tags 추가
+              for(var i=0; i<question_events[cur_indx]['containing_tags'].length; i++){
+                seen_tags.push(question_events[cur_indx]['containing_tags'][i])
+              }
+              console.log(seen_tags)
               clear_output_queue();
             })
           }

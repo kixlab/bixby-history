@@ -28,6 +28,8 @@ class Event_Node(models.Model):
     #Event_Name = models.CharField(default = "", max_length = 200)
     #Event_Cause = models.TextField(default="", max_length = 200)
     Event_Happen = models.TextField(default="", max_length = 1000)
+    Containing_Tag = models.ManyToManyField(Event_Tag, null=True, blank=True, related_name='con')
+    Prerequisite_Tag = models.ManyToManyField(Event_Tag, null=True, blank=True, related_name='pre')
     #Event_Aftermath = models.TextField(default="", max_length = 200)
     Figures = models.ForeignKey(Figure)
     Prerequisite_Event = models.ManyToManyField("self", null=True, blank=True, related_name='prerequisite', symmetrical = False)
